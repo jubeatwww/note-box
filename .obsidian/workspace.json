@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "0e22d5452d6b127b",
+    "type": "split",
+    "children": [
+      {
+        "id": "795f5f655fcd7116",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f35fc33476942302",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "15275e307f850096",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7d32e4ae0252e1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a32ee59c6c779a7c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "83bed3d07d5ba7dd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3072f3d0d00413a1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 332.5
+  },
+  "right": {
+    "id": "1b506c1b131329a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "789c901b2995b58b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3da0058f0c404c5a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3d3d1ba319293535",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ef1ae0defc95e42",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "453e1ff3c13138e1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f35fc33476942302",
+  "lastOpenFiles": [
+    "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
+    "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+    "Linux kernel/你所不知道的C語言/lvalue.md",
+    "Linux kernel/你所不知道的C語言/指標/Function Pointer.md",
+    "Linux kernel/你所不知道的C語言/指標/C Array令人困惑的部份.md",
+    "Notes with keywords.canvas",
+    "Untitled.canvas",
+    "Linux kernel/你所不知道的C語言/指標/針對指標的修飾 (qualifier).md",
+    "Linux kernel/你所不知道的C語言/指標/Address and indirection operators.md",
+    "Linux kernel/你所不知道的C語言/指標/Types.md",
+    "Software Architecture & Technology of Large-Scale Systems/Serial Request Latency.md",
+    "Software Architecture & Technology of Large-Scale Systems/Performace Measurement Metrics.md",
+    "Software Architecture & Technology of Large-Scale Systems/Pasted image 20230916194438.png",
+    "Software Architecture & Technology of Large-Scale Systems/System Performance Objectives.md",
+    "Software Architecture & Technology of Large-Scale Systems/Performance Principles.md",
+    "Software Architecture & Technology of Large-Scale Systems/What is performance.md",
+    "Software Architecture & Technology of Large-Scale Systems/How do performance problem look like.md",
+    "Linux kernel/你所不知道的C語言/指標/Pointers vs. Arrays.md",
+    "Linux kernel/你所不知道的C語言/指標/pointer與字串的處理.md",
+    "Linux kernel/你所不知道的C語言/指標/strdup.md",
+    "Linux kernel/你所不知道的C語言/指標/main function.md",
+    "Linux kernel/你所不知道的C語言/GDB.md",
+    "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
+    "Linux kernel/你所不知道的C語言/指標/Object.md",
+    "Linux kernel/你所不知道的C語言/指標/沒有「雙指標」只有「指標的指標」.md",
+    "2023-09-16.md",
+    "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
+    "Linux kernel/Untitled.canvas",
+    "Linux kernel/你所不知道的C語言/指標/Array Subscription.md",
+    "Linux kernel/你所不知道的C語言/指標/Array Declaration.md",
+    "Linux kernel/你所不知道的C語言/指標/指標指向陣列元素.md",
+    "Software Architecture & Technology of Large-Scale Systems",
+    "Linux kernel/你所不知道的C語言/指標/Pasted image 20230826091639.png",
+    "Linux kernel/你所不知道的C語言/指標/Pasted image 20230826091606.png",
+    "Linux kernel/你所不知道的C語言/函式呼叫",
+    "Linux kernel/你所不知道的C語言/指標/Understanding Declarations.jpg",
+    "產業研究/PCB.canvas",
+    "產業研究",
+    "Linux kernel/你所不知道的C語言/指標/科技公司面試題.jpg",
+    "leetcode/知識樹.canvas",
+    "Linux kernel/你所不知道的C語言/指標",
+    "Linux kernel/你所不知道的C語言",
+    "leetcode/problems",
+    "leetcode/algorithms",
+    "leetcode",
+    "Linux kernel"
+  ]
+}

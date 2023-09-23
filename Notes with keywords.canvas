@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"type":"text","text":"房貸:\n轉貸\n增貸\n轉增貸","id":"025d3db18f5031d7","x":-720,"y":-200,"width":250,"height":140},
+		{"type":"text","text":"股票質押","id":"bcfdf491b816c615","x":-500,"y":-420,"width":250,"height":60},
+		{"type":"text","text":"The Plateau of Latent Potential","id":"d3e516be7777bab7","x":-125,"y":-30,"width":250,"height":60},
+		{"id":"37694a65140c4436","x":-422,"y":-225,"width":250,"height":95,"type":"text","text":"What's the difference of realtek chipset\nau, ae, bu ... means"},
+		{"id":"9822374c92615df4","x":-400,"y":-100,"width":250,"height":200,"type":"text","text":"How to install wifi driver on linux\nhttps://github.com/\nhttps://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md"}
+	],
+	"edges":[]
+}

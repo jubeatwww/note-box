@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "063e2b41d2a82d3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d26be6ee38c1993a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d3d09cd88851916",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "知識樹.canvas",
+                "viewState": {
+                  "x": -290,
+                  "y": 305.15215745647237,
+                  "zoom": -0.06929679089038607
+                }
+              }
+            }
+          },
+          {
+            "id": "58d9e3c859ad7c4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "problems/647. Palindromic Substrings.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3287d2266d973d7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms/KMP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d5e8f35b3713cc08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "problems/5. Longest Palindromic Substring.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0021dbeafa6913a",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d81fbfc47201a38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f1823ab61315571",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "90dbdcae6c31ed2e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "723d7fa488a887d9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bb27d060a811473d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e86828bb035983d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69520e800f3c92a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "problems/647. Palindromic Substrings.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0d29090fa02ba375",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "problems/647. Palindromic Substrings.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b4f483a000ee6f1a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2bfb37d91c680fd9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "problems/647. Palindromic Substrings.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3d3d09cd88851916",
+  "lastOpenFiles": [
+    "problems/647. Palindromic Substrings.md",
+    "知識樹.canvas",
+    "problems/5. Longest Palindromic Substring.md",
+    "algorithms",
+    "problems",
+    "algorithms/Manacher's Algorithm.md",
+    "algorithms/KMP.md"
+  ]
+}

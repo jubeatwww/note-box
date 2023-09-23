@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"type":"text","text":"有哪些[[PCB的應用|應用]]?","id":"a0f164ceed8f9e6b","x":-480,"y":-260,"width":250,"height":60},
+		{"type":"text","text":"原料有哪些?","id":"8d13f5a5f6b3ac0d","x":-480,"y":-460,"width":250,"height":60},
+		{"type":"text","text":"What is [[PCB概觀|PCB]]","id":"62ae7deb608390b1","x":-1000,"y":-260,"width":250,"height":60},
+		{"type":"text","text":"[[PCB的上中下游|上中下游]]","id":"ce641af173df163a","x":-480,"y":-660,"width":250,"height":60},
+		{"type":"text","text":"中游","id":"3111b03dba3dfa9e","x":-120,"y":-660,"width":250,"height":60},
+		{"type":"text","text":"有哪些[[PCB規格|規格]]?","id":"325106875d5ebadf","x":-480,"y":-120,"width":250,"height":60},
+		{"id":"b92c907cb94c84cd","x":200,"y":-560,"width":250,"height":60,"type":"text","text":"[[銅箔基板(CCL)]]"},
+		{"id":"10731fcc9c609512","x":200,"y":-760,"width":250,"height":60,"type":"text","text":"[[硬板、軟板、IC載板製造]]"},
+		{"id":"b64943c7a6824a89","x":200,"y":-660,"width":250,"height":60,"type":"text","text":"[[基板組裝加工及相關製造]]"}
+	],
+	"edges":[
+		{"id":"272e7ae510e20b6c","fromNode":"62ae7deb608390b1","fromSide":"right","toNode":"8d13f5a5f6b3ac0d","toSide":"left"},
+		{"id":"5b5d44066b101109","fromNode":"62ae7deb608390b1","fromSide":"right","toNode":"a0f164ceed8f9e6b","toSide":"left"},
+		{"id":"5962fe89be1e019f","fromNode":"62ae7deb608390b1","fromSide":"right","toNode":"ce641af173df163a","toSide":"left"},
+		{"id":"a49985a13a849b61","fromNode":"62ae7deb608390b1","fromSide":"right","toNode":"325106875d5ebadf","toSide":"left"},
+		{"id":"341884e23a6a51df","fromNode":"ce641af173df163a","fromSide":"right","toNode":"3111b03dba3dfa9e","toSide":"left"},
+		{"id":"a156a8d11d563cb8","fromNode":"3111b03dba3dfa9e","fromSide":"right","toNode":"10731fcc9c609512","toSide":"left"},
+		{"id":"b298710ca530f328","fromNode":"3111b03dba3dfa9e","fromSide":"right","toNode":"b64943c7a6824a89","toSide":"left"},
+		{"id":"b7a9d0ed8fc5c6d0","fromNode":"3111b03dba3dfa9e","fromSide":"right","toNode":"b92c907cb94c84cd","toSide":"left"}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"type":"text","text":"Pointer","id":"09af1504848b7ca5","x":-2400,"y":-929,"width":250,"height":60},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Knowledge already known.md","subpath":"#該如何解釋 [qsort(3)](https //linux.die.net/man/3/qsort) 的參數和設計考量呢？","id":"e748d26c980f35a3","x":-3591,"y":-1235,"width":509,"height":248},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Knowledge already known.md","subpath":"#指標解說","id":"58542acade471020","x":-2951,"y":-967,"width":460,"height":137},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Knowledge already known.md","subpath":"#為何我看到的程式碼往往寫成類似下面這樣？","id":"88591aeae49e00f2","x":-3600,"y":-805,"width":528,"height":166},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Understanding Declarations.md","subpath":"#解釋以下程式","id":"b3e1bb1c39c71f2c","x":-2040,"y":-983,"width":420,"height":169},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Understanding Declarations.md","subpath":"#科技公司面試題","id":"de36f2805e526160","x":-2030,"y":-576,"width":400,"height":121},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Understanding Declarations.md","subpath":"#^c171e4","id":"e5502abcdbe7817d","x":-1480,"y":-946,"width":400,"height":95},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Understanding Declarations.md","subpath":"#^445c42","id":"23bcd4e74c032e9f","x":-1480,"y":-565,"width":400,"height":99},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Object.md","subpath":"#^7ab677","id":"4532b1f6edc2f569","x":-2205,"y":-1253,"width":491,"height":114},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Object.md","subpath":"#^207827","id":"206b082b0a82ac28","x":-2760,"y":-1235,"width":452,"height":78},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Types.md","subpath":"#^b7ace2","id":"c533f4c0edebefa0","x":-1080,"y":-1633,"width":566,"height":136},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Types.md","subpath":"#^913b49","id":"9a170ee4bf275afa","x":-1560,"y":-1618,"width":400,"height":102},
+		{"id":"2b49f351a27a2e36","x":-987,"y":-1368,"width":380,"height":115,"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Types.md","subpath":"#^bef57a"},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Types.md","subpath":"#^965799","id":"ce59ca73a4026cd2","x":-2000,"y":-1620,"width":400,"height":106},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Types.md","subpath":"#^3a031b","id":"92215de55ea66aa0","x":-2474,"y":-1617,"width":400,"height":100},
+		{"type":"file","file":"Linux kernel/你所不知道的C語言/指標/Types.md","subpath":"#^e8988b","id":"ee182a33c7add14a","x":-1107,"y":-1880,"width":621,"height":114}
+	],
+	"edges":[
+		{"id":"95fc5a7785f236fe","fromNode":"b3e1bb1c39c71f2c","fromSide":"bottom","toNode":"de36f2805e526160","toSide":"top"},
+		{"id":"1de9bc0f66ae8dba","fromNode":"b3e1bb1c39c71f2c","fromSide":"right","toNode":"e5502abcdbe7817d","toSide":"left"},
+		{"id":"8cd9234f3ec6640d","fromNode":"de36f2805e526160","fromSide":"right","toNode":"23bcd4e74c032e9f","toSide":"left"},
+		{"id":"0feb7cb0c6847d19","fromNode":"58542acade471020","fromSide":"left","toNode":"e748d26c980f35a3","toSide":"right"},
+		{"id":"38fc3fb4e681bcf3","fromNode":"58542acade471020","fromSide":"left","toNode":"88591aeae49e00f2","toSide":"right"},
+		{"id":"a24fca55325af7ba","fromNode":"09af1504848b7ca5","fromSide":"right","toNode":"b3e1bb1c39c71f2c","toSide":"left"},
+		{"id":"74984196b641cb4a","fromNode":"09af1504848b7ca5","fromSide":"left","toNode":"58542acade471020","toSide":"right"},
+		{"id":"82895d3bdfe90812","fromNode":"09af1504848b7ca5","fromSide":"top","toNode":"206b082b0a82ac28","toSide":"bottom"},
+		{"id":"2c6c929e4fa383fe","fromNode":"09af1504848b7ca5","fromSide":"top","toNode":"4532b1f6edc2f569","toSide":"bottom"},
+		{"id":"e4b8e39dadfdeec5","fromNode":"206b082b0a82ac28","fromSide":"top","toNode":"92215de55ea66aa0","toSide":"bottom"},
+		{"id":"f8853e805b75788d","fromNode":"c533f4c0edebefa0","fromSide":"top","toNode":"ee182a33c7add14a","toSide":"bottom"},
+		{"id":"8cd33d4c59efc9b8","fromNode":"4532b1f6edc2f569","fromSide":"top","toNode":"92215de55ea66aa0","toSide":"bottom"},
+		{"id":"d79656bddf0d0f63","fromNode":"92215de55ea66aa0","fromSide":"right","toNode":"ce59ca73a4026cd2","toSide":"left"},
+		{"id":"d30b3fd61cb5392d","fromNode":"ce59ca73a4026cd2","fromSide":"right","toNode":"9a170ee4bf275afa","toSide":"left"},
+		{"id":"ae97205b26d40a10","fromNode":"9a170ee4bf275afa","fromSide":"right","toNode":"c533f4c0edebefa0","toSide":"left"},
+		{"id":"b0386bf064f8c3c7","fromNode":"c533f4c0edebefa0","fromSide":"bottom","toNode":"2b49f351a27a2e36","toSide":"top"}
+	]
+}
