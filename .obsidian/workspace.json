@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+                "file": "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+                "file": "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+                "file": "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md"
+                "file": "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md"
               }
             }
           }
@@ -148,15 +148,17 @@
   },
   "active": "f35fc33476942302",
   "lastOpenFiles": [
-    "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
-    "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
+    "Linux kernel/你所不知道的C語言/指標/Null pointer.md",
     "Linux kernel/你所不知道的C語言/lvalue.md",
     "Linux kernel/你所不知道的C語言/指標/Function Pointer.md",
     "Linux kernel/你所不知道的C語言/指標/C Array令人困惑的部份.md",
+    "Linux kernel/你所不知道的C語言/指標/Array Subscription.md",
+    "Linux kernel/你所不知道的C語言/指標/Address and indirection operators.md",
+    "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
+    "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
     "Notes with keywords.canvas",
     "Untitled.canvas",
     "Linux kernel/你所不知道的C語言/指標/針對指標的修飾 (qualifier).md",
-    "Linux kernel/你所不知道的C語言/指標/Address and indirection operators.md",
     "Linux kernel/你所不知道的C語言/指標/Types.md",
     "Software Architecture & Technology of Large-Scale Systems/Serial Request Latency.md",
     "Software Architecture & Technology of Large-Scale Systems/Performace Measurement Metrics.md",
@@ -176,9 +178,7 @@
     "2023-09-16.md",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "Linux kernel/Untitled.canvas",
-    "Linux kernel/你所不知道的C語言/指標/Array Subscription.md",
     "Linux kernel/你所不知道的C語言/指標/Array Declaration.md",
-    "Linux kernel/你所不知道的C語言/指標/指標指向陣列元素.md",
     "Software Architecture & Technology of Large-Scale Systems",
     "Linux kernel/你所不知道的C語言/指標/Pasted image 20230826091639.png",
     "Linux kernel/你所不知道的C語言/指標/Pasted image 20230826091606.png",

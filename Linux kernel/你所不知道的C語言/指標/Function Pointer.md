@@ -17,9 +17,9 @@ int main() { return (********puts)("Hello"); }
 	    - 這告訴我們 `*` 運算符（當用作解參考運算符時）是右關聯的。這意味著當多個 `*` 運算符連續出現時，它們將從右至左地評估
 	    - 例如，在指針到指針的表達式 `**p` 中，首先對最右邊的 `*` 進行評估，然後再對左邊的 `*` 進行評估
 
-- C99 [ 6.5.1 ] It is an lvalue, a function designator, or a void expression if the unparenthesized expression is, respectively, an lvalue, a function designator, or a void expression.
+- C99 [ 6.5.1 ] It is an [[lvalue]], a function designator, or a void expression if the unparenthesized expression is, respectively, an [[lvalue]], a function designator, or a void expression.
 > 如果你有一個表達式，而這個表達式沒有被括弧包圍，並且它是一個 lvalue、function designator 或 void expression，那麼即使你將其放入括弧中，它仍然會保持其原本的性質
-1. 假設 `x` 是一個整數變量，那麼 `x` 是一個 lvalue。如果我們用括弧包裹它，`(x)` 仍然是一個 lvalue。
+1. 假設 `x` 是一個整數變量，那麼 `x` 是一個 [[lvalue]]。如果我們用括弧包裹它，`(x)` 仍然是一個 [[lvalue]]。
 2. 假設 `f` 是一個函數，那麼 `f` 是一個 function designator。用括弧包裹它，`(f)` 仍然是一個 function designator。
 3. 考慮一個如 `printf("Hello, world!");` 的表達式，它是一個返回 void 的函數呼叫，因此它是一個 void expression。用括弧包裹它 `(printf("Hello, world!"))` 仍然是一個 void expression
 

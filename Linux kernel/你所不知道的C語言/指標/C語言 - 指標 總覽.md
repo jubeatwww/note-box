@@ -11,6 +11,7 @@
 - [[Address and indirection operators]]
 - [[針對指標的修飾 (qualifier)]]
 - [[重新探討「字串」]]
+- [[Null pointer]]
 
 
 #C語言 #Pointer #總覽
