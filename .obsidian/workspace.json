@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "fedfa5499003b461",
+        "id": "9e26429acc347c10",
         "type": "tabs",
         "children": [
           {
-            "id": "f6923ece74086fe7",
+            "id": "9ed1cfdff6c3594c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6923ece74086fe7",
+  "active": "9ed1cfdff6c3594c",
   "lastOpenFiles": [
+    "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/Stack.md",
     "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
     "追蹤Stack執行.md",
@@ -172,7 +164,6 @@
     "Linux kernel/你所不知道的C語言/GDB.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001151955.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/stack frame.md",
-    "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/Process 和 C 程式的關聯.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/回傳值.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/ELF segment & section.md",
