@@ -11,7 +11,9 @@
 
 # [[追蹤Stack執行]]
 
+# [[從遞迴觀察函式呼叫]]
 
+# [[stack-based buffer overflow]]
 
 
 #C語言 #Function 
