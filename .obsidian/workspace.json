@@ -4,35 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "3fbadc4b2553a628",
+        "id": "1580db5351beaa87",
         "type": "tabs",
         "children": [
           {
-            "id": "d81046445685a34d",
+            "id": "5bd8968b2af64c2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/C語言 - 函式 總覽.md",
+                "file": "posts/intro.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
-          },
-          {
-            "id": "aa7fae91b0c17cad",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "程式書.md",
-                "staged": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/intro.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/intro.md"
+              }
             }
           },
           {
@@ -164,8 +156,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "aa7fae91b0c17cad",
+  "active": "a32ee59c6c779a7c",
   "lastOpenFiles": [
+    "Software Architecture & Technology of Large-Scale Systems/Performance/How do performance problem look like.md",
+    "posts/intro.md",
+    "posts",
     "程式書.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/Stack.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
@@ -206,8 +201,6 @@
     "Linux kernel/你所不知道的C語言/指標/Null pointer.md",
     "Linux kernel/你所不知道的C語言/lvalue.md",
     "Linux kernel/你所不知道的C語言/指標/C Array令人困惑的部份.md",
-    "Linux kernel/你所不知道的C語言/指標/Array Subscription.md",
-    "Linux kernel/你所不知道的C語言/指標/Address and indirection operators.md",
     "Untitled.canvas",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "Software Architecture & Technology of Large-Scale Systems",
@@ -216,7 +209,6 @@
     "產業研究",
     "leetcode/知識樹.canvas",
     "Linux kernel/你所不知道的C語言/指標",
-    "Linux kernel/你所不知道的C語言",
-    "leetcode/problems"
+    "Linux kernel/你所不知道的C語言"
   ]
 }
