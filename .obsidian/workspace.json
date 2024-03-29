@@ -24,30 +24,15 @@
             "id": "aa7fae91b0c17cad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/Stack.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fba8464837e2000e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "程式書.md",
+                "staged": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,9 +135,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md"
-              }
+              "state": {}
             }
           },
           {
@@ -183,11 +164,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a32ee59c6c779a7c",
+  "active": "aa7fae91b0c17cad",
   "lastOpenFiles": [
-    "stack-based buffer overflow.md",
-    "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
+    "程式書.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/Stack.md",
+    "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
+    "Linux kernel/你所不知道的C語言/指標/Pointers vs. Arrays.md",
+    "Linux kernel/你所不知道的C語言/指標/Function Pointer.md",
+    "Linux kernel/你所不知道的C語言/函式呼叫/探討Function.md",
+    "stack-based buffer overflow.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010173940.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/從遞迴觀察函式呼叫.md",
@@ -213,7 +198,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/Process 和 C 程式的關聯.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/回傳值.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/ELF segment & section.md",
-    "Linux kernel/你所不知道的C語言/函式呼叫/探討Function.md",
     "Linux kernel/Untitled.canvas",
     "Linux kernel/你所不知道的C語言/函式呼叫/Parameter v.s. Argument.md",
     "Linux kernel/你所不知道的C語言/指標/assets",
@@ -221,13 +205,10 @@
     "Linux kernel/你所不知道的C語言/指標/沒有「雙指標」只有「指標的指標」.md",
     "Linux kernel/你所不知道的C語言/指標/Null pointer.md",
     "Linux kernel/你所不知道的C語言/lvalue.md",
-    "Linux kernel/你所不知道的C語言/指標/Function Pointer.md",
     "Linux kernel/你所不知道的C語言/指標/C Array令人困惑的部份.md",
     "Linux kernel/你所不知道的C語言/指標/Array Subscription.md",
     "Linux kernel/你所不知道的C語言/指標/Address and indirection operators.md",
-    "Linux kernel/你所不知道的C語言/指標/重新探討「字串」.md",
     "Untitled.canvas",
-    "Linux kernel/你所不知道的C語言/指標/針對指標的修飾 (qualifier).md",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "Software Architecture & Technology of Large-Scale Systems",
     "Linux kernel/你所不知道的C語言/函式呼叫",
