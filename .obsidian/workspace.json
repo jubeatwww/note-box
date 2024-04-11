@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
+                "file": "leetcode/2348. Number of Zero-Filled Subarrays.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
+                "file": "leetcode/2348. Number of Zero-Filled Subarrays.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
+                "file": "leetcode/2348. Number of Zero-Filled Subarrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md"
+                "file": "leetcode/2348. Number of Zero-Filled Subarrays.md"
               }
             }
           },
@@ -158,8 +158,9 @@
   },
   "active": "dd2fa925bfb5c3c9",
   "lastOpenFiles": [
-    "posts/README.md",
     "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
+    "leetcode/2348. Number of Zero-Filled Subarrays.md",
+    "posts/README.md",
     "leetcode/438. Find All Anagrams in a String.md",
     "leetcode/128. Longest Consecutive Sequence.md",
     "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
@@ -191,7 +192,6 @@
     "Notes with keywords.canvas",
     "Software Architecture & Technology of Large-Scale Systems/Performance/Overview.md",
     "Software Architecture & Technology of Large-Scale Systems/Performance/Network Transfer Latency.md",
-    "Software Architecture & Technology of Large-Scale Systems/Performance/What is performance.md",
     "Software Architecture & Technology of Large-Scale Systems/Performance/assets",
     "Software Architecture & Technology of Large-Scale Systems/Performance",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001164700.png",
