@@ -1,10 +1,10 @@
 {
 	"nodes":[
-		{"type":"file","file":"leetcode/algorithms/Manacher's Algorithm.md","id":"0149baadb7f0789c","x":0,"y":-260,"width":400,"height":400},
+		{"type":"file","file":"legacy/algorithms/Manacher's Algorithm.md","id":"0149baadb7f0789c","x":0,"y":-260,"width":400,"height":400},
 		{"type":"text","text":"String","id":"f9e6970d4f4f9244","x":-250,"y":-520,"width":110,"height":60},
-		{"type":"file","file":"leetcode/problems/5. Longest Palindromic Substring.md","id":"65dd08febae31d6e","x":0,"y":340,"width":400,"height":400},
-		{"type":"file","file":"leetcode/problems/647. Palindromic Substrings.md","id":"de8e45276136caf8","x":-480,"y":337,"width":400,"height":403},
-		{"type":"file","file":"leetcode/algorithms/KMP.md","id":"1e115df12b0f57de","x":-980,"y":-260,"width":400,"height":400}
+		{"type":"file","file":"legacy/problems/5. Longest Palindromic Substring.md","id":"65dd08febae31d6e","x":0,"y":340,"width":400,"height":400},
+		{"type":"file","file":"legacy/problems/647. Palindromic Substrings.md","id":"de8e45276136caf8","x":-480,"y":337,"width":400,"height":403},
+		{"type":"file","file":"legacy/algorithms/KMP.md","id":"1e115df12b0f57de","x":-980,"y":-260,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"24d55a737f274e07","fromNode":"f9e6970d4f4f9244","fromSide":"bottom","toNode":"1e115df12b0f57de","toSide":"top"},
