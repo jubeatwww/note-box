@@ -11,8 +11,13 @@
             "id": "750ffab77ec91e3c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "leetcode/904. Fruit Into Baskets.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "leetcode/904. Fruit Into Baskets.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "leetcode/904. Fruit Into Baskets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "leetcode/904. Fruit Into Baskets.md"
+              }
             }
           },
           {
@@ -147,7 +156,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "750ffab77ec91e3c",
+  "active": "a32ee59c6c779a7c",
   "lastOpenFiles": [
     "leetcode/904. Fruit Into Baskets.md",
     "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
