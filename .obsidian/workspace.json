@@ -4,18 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0b9d51b30b6aedbe",
+        "id": "268ebd569a3cd52e",
         "type": "tabs",
         "children": [
           {
-            "id": "dd2fa925bfb5c3c9",
+            "id": "750ffab77ec91e3c",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -150,8 +147,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dd2fa925bfb5c3c9",
+  "active": "750ffab77ec91e3c",
   "lastOpenFiles": [
+    "leetcode/904. Fruit Into Baskets.md",
+    "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
+    "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
     "leetcode/2306. Naming a Company.md",
     "leetcode/68. Text Justification.md",
     "leetcode/2405. Optimal Partition of String.md",
@@ -178,9 +178,6 @@
     "posts",
     "程式書.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/Stack.md",
-    "Linux kernel/你所不知道的C語言/函式呼叫/ROP攻擊.md",
-    "Linux kernel/你所不知道的C語言/指標/Function Pointer.md",
-    "Linux kernel/你所不知道的C語言/函式呼叫/探討Function.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010173940.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20230930173345.png",
