@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/739. Daily Temperatures.md",
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/739. Daily Temperatures.md",
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/739. Daily Temperatures.md",
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/739. Daily Temperatures.md"
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md"
               }
             }
           },
@@ -156,26 +156,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0ff141fb1ee28561",
+  "active": "a32ee59c6c779a7c",
   "lastOpenFiles": [
-    "leetcode/901. Online Stock Span.md",
-    "leetcode/739. Daily Temperatures.md",
-    "leetcode/441. Arranging Coins.md",
-    "leetcode/assets/441. Arranging Coins-assets.png",
-    "leetcode/assets",
-    "leetcode/402. Remove K Digits.md",
-    "leetcode/904. Fruit Into Baskets.md",
+    "leetcode/2405. Optimal Partition of String.md",
+    "leetcode/2348. Number of Zero-Filled Subarrays.md",
+    "leetcode/2306. Naming a Company.md",
     "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
     "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
-    "leetcode/2306. Naming a Company.md",
-    "leetcode/68. Text Justification.md",
-    "leetcode/2405. Optimal Partition of String.md",
-    "leetcode/2483. Minimum Penalty for a Shop.md",
-    "leetcode/2348. Number of Zero-Filled Subarrays.md",
     "leetcode/1396. Design Underground System.md",
     "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
     "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
+    "leetcode/904. Fruit Into Baskets.md",
+    "leetcode/901. Online Stock Span.md",
+    "leetcode/739. Daily Temperatures.md",
+    "leetcode/441. Arranging Coins.md",
     "leetcode/438. Find All Anagrams in a String.md",
+    "leetcode/402. Remove K Digits.md",
+    "leetcode/assets/441. Arranging Coins-assets.png",
+    "leetcode/assets",
+    "leetcode/68. Text Justification.md",
+    "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/128. Longest Consecutive Sequence.md",
     "posts/README.md",
     "legacy/problems/647. Palindromic Substrings.md",
