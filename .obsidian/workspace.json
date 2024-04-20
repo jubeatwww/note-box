@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "268ebd569a3cd52e",
+        "id": "866d9bef0bacc1fb",
         "type": "tabs",
         "children": [
           {
-            "id": "750ffab77ec91e3c",
+            "id": "0ff141fb1ee28561",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/904. Fruit Into Baskets.md",
+                "file": "leetcode/901. Online Stock Span.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/904. Fruit Into Baskets.md",
+                "file": "leetcode/901. Online Stock Span.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/904. Fruit Into Baskets.md",
+                "file": "leetcode/901. Online Stock Span.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/904. Fruit Into Baskets.md"
+                "file": "leetcode/901. Online Stock Span.md"
               }
             }
           },
@@ -156,8 +156,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a32ee59c6c779a7c",
+  "active": "0ff141fb1ee28561",
   "lastOpenFiles": [
+    "leetcode/739. Daily Temperatures.md",
+    "leetcode/441. Arranging Coins.md",
+    "leetcode/assets/441. Arranging Coins-assets.png",
+    "leetcode/assets",
+    "leetcode/402. Remove K Digits.md",
+    "leetcode/901. Online Stock Span.md",
     "leetcode/904. Fruit Into Baskets.md",
     "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
     "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
@@ -180,13 +186,8 @@
     "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
     "Linux kernel/你所不知道的C語言/指標/Pointers vs. Arrays.md",
     "Linux kernel/你所不知道的C語言/指標/Understanding Declarations.md",
-    "Linux kernel/你所不知道的C語言/指標/Knowledge already known.md",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
-    "Linux kernel/你所不知道的C語言/指標/沒有「雙指標」只有「指標的指標」.md",
-    "Software Architecture & Technology of Large-Scale Systems/Performance/How do performance problem look like.md",
     "posts",
-    "程式書.md",
-    "Linux kernel/你所不知道的C語言/函式呼叫/Stack.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010173940.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20230930173345.png",
@@ -199,7 +200,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160815.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160747.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160132.png",
-    "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160028.png",
     "Linux kernel/Untitled.canvas",
     "Linux kernel/你所不知道的C語言/指標/assets",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets",
@@ -208,7 +208,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫",
     "產業研究/PCB.canvas",
     "產業研究",
-    "legacy/知識樹.canvas",
-    "Linux kernel/你所不知道的C語言/指標"
+    "legacy/知識樹.canvas"
   ]
 }
