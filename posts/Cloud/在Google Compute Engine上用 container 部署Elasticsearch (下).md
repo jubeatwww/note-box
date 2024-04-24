@@ -4,7 +4,6 @@ tags:
   - gcp
   - terraform
 slug: /Cloud/gce-cos-terraform-part2
-title: 在Google Compute Engine上用 container 部署Elasticsearch (下)
 ---
 ## 前言
 
