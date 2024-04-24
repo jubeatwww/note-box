@@ -11,8 +11,13 @@
             "id": "b464a2e4458bd100",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "posts/Linux/[Linux] journalctl.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/Linux/[Linux] journalctl.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/Linux/[Linux] journalctl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/Linux/[Linux] journalctl.md"
+              }
             }
           },
           {
@@ -149,6 +158,9 @@
   },
   "active": "b464a2e4458bd100",
   "lastOpenFiles": [
+    "posts/Linux/[Linux] Systemd.md",
+    "posts/Linux/[Linux] journalctl.md",
+    "posts/Linux",
     "leetcode/19. Remove Nth Node From End of List.md",
     "leetcode/2130. Maximum Twin Sum of a Linked List.md",
     "leetcode/1898. Maximum Number of Removable Characters.md",
@@ -176,8 +188,6 @@
     "legacy/problems/647. Palindromic Substrings.md",
     "legacy",
     "legacy/problems/5. Longest Palindromic Substring.md",
-    "legacy/algorithms/KMP.md",
-    "Linux kernel/你所不知道的C語言/指標/Object.md",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "posts",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
@@ -199,7 +209,6 @@
     "Software Architecture & Technology of Large-Scale Systems",
     "Linux kernel/你所不知道的C語言/函式呼叫",
     "產業研究/PCB.canvas",
-    "產業研究",
     "legacy/知識樹.canvas"
   ]
 }
