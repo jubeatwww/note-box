@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "866d9bef0bacc1fb",
+        "id": "ab61837c82a4b979",
         "type": "tabs",
         "children": [
           {
-            "id": "0ff141fb1ee28561",
+            "id": "b464a2e4458bd100",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "leetcode/2483. Minimum Penalty for a Shop.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +147,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a32ee59c6c779a7c",
+  "active": "b464a2e4458bd100",
   "lastOpenFiles": [
+    "leetcode/19. Remove Nth Node From End of List.md",
+    "leetcode/2130. Maximum Twin Sum of a Linked List.md",
+    "leetcode/1898. Maximum Number of Removable Characters.md",
+    "leetcode/143. Reorder List.md",
+    "posts/README.md",
+    "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/2405. Optimal Partition of String.md",
     "leetcode/2348. Number of Zero-Filled Subarrays.md",
     "leetcode/2306. Naming a Company.md",
@@ -175,17 +172,12 @@
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "leetcode/68. Text Justification.md",
-    "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/128. Longest Consecutive Sequence.md",
-    "posts/README.md",
     "legacy/problems/647. Palindromic Substrings.md",
     "legacy",
     "legacy/problems/5. Longest Palindromic Substring.md",
     "legacy/algorithms/KMP.md",
     "Linux kernel/你所不知道的C語言/指標/Object.md",
-    "Linux kernel/你所不知道的C語言/指標/C語言 - 指標 總覽.md",
-    "Linux kernel/你所不知道的C語言/指標/Pointers vs. Arrays.md",
-    "Linux kernel/你所不知道的C語言/指標/Understanding Declarations.md",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "posts",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
