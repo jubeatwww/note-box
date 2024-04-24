@@ -1,6 +1,6 @@
 ---
 title: 在Google Compute Engine上用 container 部署Elasticsearch (上)
-slug: /Linux/gce-cos-terraform-part1
+slug: /Cloud/gce-cos-terraform-part1
 tags:
   - cloud
   - gcp
