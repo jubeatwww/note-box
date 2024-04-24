@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md",
+                "file": "posts/Linux/[Linux] Systemd.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md",
+                "file": "posts/Linux/[Linux] Systemd.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md",
+                "file": "posts/Linux/[Linux] Systemd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md"
+                "file": "posts/Linux/[Linux] Systemd.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "b464a2e4458bd100",
   "lastOpenFiles": [
-    "posts/Linux/[Linux] Systemd.md",
     "posts/Linux/[Linux] journalctl.md",
+    "posts/Linux/[Linux] Systemd.md",
     "posts/Linux",
     "leetcode/19. Remove Nth Node From End of List.md",
     "leetcode/2130. Maximum Twin Sum of a Linked List.md",
