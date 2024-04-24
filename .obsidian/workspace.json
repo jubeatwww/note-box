@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Linux/Systemd.md",
+                "file": "posts/README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Linux/Systemd.md",
+                "file": "posts/README.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Linux/Systemd.md",
+                "file": "posts/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Linux/Systemd.md"
+                "file": "posts/README.md"
               }
             }
           },
@@ -158,9 +158,9 @@
   },
   "active": "2f37301dfbd6dec9",
   "lastOpenFiles": [
+    "posts/Linux/Systemd.md",
     "posts/Linux/journalctl.md",
     "leetcode/19. Remove Nth Node From End of List.md",
-    "posts/Linux/Systemd.md",
     "posts/Linux",
     "leetcode/2130. Maximum Twin Sum of a Linked List.md",
     "leetcode/1898. Maximum Number of Removable Characters.md",
