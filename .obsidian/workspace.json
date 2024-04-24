@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ab61837c82a4b979",
+        "id": "993e28363e0a05dc",
         "type": "tabs",
         "children": [
           {
-            "id": "b464a2e4458bd100",
+            "id": "2f37301dfbd6dec9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md",
+                "file": "posts/Linux/Systemd.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md",
+                "file": "posts/Linux/Systemd.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md",
+                "file": "posts/Linux/Systemd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Linux/[Linux] journalctl.md"
+                "file": "posts/Linux/Systemd.md"
               }
             }
           },
@@ -156,12 +156,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b464a2e4458bd100",
+  "active": "2f37301dfbd6dec9",
   "lastOpenFiles": [
-    "posts/Linux/[Linux] Systemd.md",
-    "posts/Linux/[Linux] journalctl.md",
-    "posts/Linux",
+    "posts/Linux/journalctl.md",
     "leetcode/19. Remove Nth Node From End of List.md",
+    "posts/Linux/Systemd.md",
+    "posts/Linux",
     "leetcode/2130. Maximum Twin Sum of a Linked List.md",
     "leetcode/1898. Maximum Number of Removable Characters.md",
     "leetcode/143. Reorder List.md",
