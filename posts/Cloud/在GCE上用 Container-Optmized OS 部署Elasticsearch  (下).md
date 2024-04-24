@@ -4,6 +4,7 @@ tags:
   - gcp
   - terraform
 slug: /Cloud/gce-cos-terraform-part2
+sidebar_position: "2"
 ---
 ## 前言
 
