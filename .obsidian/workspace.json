@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/README.md",
+                "file": "posts/Cloud/在Google Compute Engine上用 container 部署Elasticsearch (下).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/README.md",
+                "file": "posts/Cloud/在Google Compute Engine上用 container 部署Elasticsearch (下).md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/README.md",
+                "file": "posts/Cloud/在Google Compute Engine上用 container 部署Elasticsearch (下).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/README.md"
+                "file": "posts/Cloud/在Google Compute Engine上用 container 部署Elasticsearch (下).md"
               }
             }
           },
@@ -158,6 +158,11 @@
   },
   "active": "2f37301dfbd6dec9",
   "lastOpenFiles": [
+    "().md",
+    "posts/Cloud/在Google Compute Engine上用 container 部署Elasticsearch (下).md",
+    "posts/Cloud/在Google Compute Engine上用 container 部署Elasticsearch (上).md",
+    "posts/README.md",
+    "posts/Cloud",
     "posts/Linux/Systemd.md",
     "posts/Linux/journalctl.md",
     "leetcode/19. Remove Nth Node From End of List.md",
@@ -165,7 +170,6 @@
     "leetcode/2130. Maximum Twin Sum of a Linked List.md",
     "leetcode/1898. Maximum Number of Removable Characters.md",
     "leetcode/143. Reorder List.md",
-    "posts/README.md",
     "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/2405. Optimal Partition of String.md",
     "leetcode/2348. Number of Zero-Filled Subarrays.md",
@@ -184,10 +188,7 @@
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "leetcode/68. Text Justification.md",
-    "leetcode/128. Longest Consecutive Sequence.md",
-    "legacy/problems/647. Palindromic Substrings.md",
     "legacy",
-    "legacy/problems/5. Longest Palindromic Substring.md",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "posts",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
@@ -207,7 +208,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/assets",
     "Untitled.canvas",
     "Software Architecture & Technology of Large-Scale Systems",
-    "Linux kernel/你所不知道的C語言/函式呼叫",
     "產業研究/PCB.canvas",
     "legacy/知識樹.canvas"
   ]
