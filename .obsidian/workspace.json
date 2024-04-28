@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
+                "file": "posts/README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
+                "file": "posts/README.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
+                "file": "posts/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md"
+                "file": "posts/README.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "e75d85bfe177af38",
   "lastOpenFiles": [
-    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
+    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "posts/Cloud/Using startup scripts on Linux VMs.md",
     "leetcode/287. Find the Duplicate Number.md",
     "blogs/Untitled.md",
