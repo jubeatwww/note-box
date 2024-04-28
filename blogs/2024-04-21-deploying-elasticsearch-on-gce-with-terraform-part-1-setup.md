@@ -76,7 +76,7 @@ resource "google_compute_instance" "instance" {
 
 ### 配置外接硬碟
 
-```
+```hcl
 resource "google_compute_disk" "elasticsearch" {
   name = "volume-${var.service_name}"
   type = "pd-balanced"
@@ -88,7 +88,7 @@ resource "google_compute_disk" "elasticsearch" {
 
 ### 定義容器規格
 
-```
+```hcl
 data "template_file" "gce_container_declaration" {
   template = file("${path.module}/gce_container_declaration.tpl")
 
@@ -107,7 +107,7 @@ data "template_file" "gce_container_declaration" {
 ## 定義模組
 
 將所有配置集成到一個模組中，方便管理和重用
-```
+```hcl
 module "elastic_search" {
   source         = "../compute_container"
   project_id     = var.project_id
