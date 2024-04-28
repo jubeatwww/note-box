@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/287. Find the Duplicate Number.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 408.5
   },
   "right": {
     "id": "1b506c1b131329a1",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/287. Find the Duplicate Number.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/287. Find the Duplicate Number.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/287. Find the Duplicate Number.md"
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md"
               }
             }
           },
@@ -158,12 +158,16 @@
   },
   "active": "4dc65a142106b2f9",
   "lastOpenFiles": [
+    "blogs/2024-04-21-在GCE上用 Container-Optmized OS 部署Elasticsearch (上).md",
+    "posts/Cloud/Using startup scripts on Linux VMs.md",
+    "blogs/2024-04-21-在GCE上用 Container-Optmized OS 部署Elasticsearch  (下).md",
+    "leetcode/287. Find the Duplicate Number.md",
+    "blogs/Untitled.md",
+    "blogs/authors.yml",
+    "blogs",
     "leetcode/86. Partition List.md",
     "leetcode/138. Copy List with Random Pointer.md",
-    "leetcode/287. Find the Duplicate Number.md",
     "leetcode/1721. Swapping Nodes in a Linked List.md",
-    "posts/Cloud/在GCE上用 Container-Optmized OS 部署Elasticsearch  (下).md",
-    "posts/Cloud/在GCE上用 Container-Optmized OS 部署Elasticsearch (上).md",
     "().md",
     "posts/README.md",
     "posts/Cloud",
@@ -184,8 +188,6 @@
     "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
     "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
     "leetcode/904. Fruit Into Baskets.md",
-    "leetcode/901. Online Stock Span.md",
-    "leetcode/739. Daily Temperatures.md",
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "legacy",
@@ -205,9 +207,7 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160132.png",
     "Linux kernel/Untitled.canvas",
     "Linux kernel/你所不知道的C語言/指標/assets",
-    "Linux kernel/你所不知道的C語言/函式呼叫/assets",
     "Untitled.canvas",
-    "Software Architecture & Technology of Large-Scale Systems",
     "產業研究/PCB.canvas",
     "legacy/知識樹.canvas"
   ]

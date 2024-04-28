@@ -1,5 +1,4 @@
 ---
-slug: /Cloud/gce-cos-terraform-part1
 tags:
   - cloud
   - gcp
