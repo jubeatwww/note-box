@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "91e60170f7ddacf9",
+        "id": "49a703e349fdcfb4",
         "type": "tabs",
         "children": [
           {
-            "id": "f42eb8b2b63825ed",
+            "id": "e75d85bfe177af38",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -156,7 +156,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f42eb8b2b63825ed",
+  "active": "e75d85bfe177af38",
   "lastOpenFiles": [
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",

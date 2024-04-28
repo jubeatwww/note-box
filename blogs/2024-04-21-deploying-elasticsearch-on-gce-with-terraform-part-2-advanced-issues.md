@@ -5,7 +5,7 @@ tags:
   - terraform
 title: Google Compute Engine作為容器服務：部署Elasticsearch的新方法 (下)
 date: 2024-04-21T20:53:00
-authors: "[justin]"
+authors: justin
 ---
 ## 前言
 
