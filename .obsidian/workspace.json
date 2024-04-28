@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/138. Copy List with Random Pointer.md",
+                "file": "leetcode/287. Find the Duplicate Number.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/138. Copy List with Random Pointer.md",
+                "file": "leetcode/287. Find the Duplicate Number.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/138. Copy List with Random Pointer.md",
+                "file": "leetcode/287. Find the Duplicate Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/138. Copy List with Random Pointer.md"
+                "file": "leetcode/287. Find the Duplicate Number.md"
               }
             }
           },
@@ -158,8 +158,10 @@
   },
   "active": "4dc65a142106b2f9",
   "lastOpenFiles": [
-    "leetcode/1721. Swapping Nodes in a Linked List.md",
+    "leetcode/86. Partition List.md",
     "leetcode/138. Copy List with Random Pointer.md",
+    "leetcode/287. Find the Duplicate Number.md",
+    "leetcode/1721. Swapping Nodes in a Linked List.md",
     "posts/Cloud/在GCE上用 Container-Optmized OS 部署Elasticsearch  (下).md",
     "posts/Cloud/在GCE上用 Container-Optmized OS 部署Elasticsearch (上).md",
     "().md",
@@ -184,8 +186,6 @@
     "leetcode/904. Fruit Into Baskets.md",
     "leetcode/901. Online Stock Span.md",
     "leetcode/739. Daily Temperatures.md",
-    "leetcode/441. Arranging Coins.md",
-    "leetcode/438. Find All Anagrams in a String.md",
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "legacy",
