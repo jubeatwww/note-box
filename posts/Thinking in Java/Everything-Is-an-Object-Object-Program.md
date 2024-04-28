@@ -1,0 +1,92 @@
+---
+sidebar_position: "4"
+tags:
+  - Java
+title: Everything Is an Object - First Java Program
+---
+## Building a Java program
+
+### Name Visibility
+- 為了解決命名衝突的問題，C++引入了 **namespace** 來解決這問題
+- Java 則希望開發者開發者都有自己的 domain name 並以此命名來保證不會重複
+    - 將 domain name 反轉後，句號就代表子目錄的劃分
+    - e.g. **com.example.utility.fib**
+### 運用其他的 components
+
+- 為了解決不同地方擁有相同名稱的衝突，必須顯式的使用 **import** 關鍵字，指示編譯器導入一個 package
+```java
+import java.util.ArrayList;
+```
+
+- 若 package 內有眾多的 class，想一次全部引入的時候可以使用 “*“    
+```java
+import java.util.*
+```
+
+### static 關鍵字
+- 通常來說，創建 class 是描述那個 class 的外觀與行為，在使用 **new** 創建那個 class 的 object 後儲存空間才會被分配，其 method 才可供外界調用
+- 有兩種情形無法透過一般方法解決
+    - 只想為特定的的 scope 分配單一儲存空間，不考慮到底要創建多少 object
+    - 希望某個 method 不與包含它的 class 關聯，即使沒有 new object 也可以 call 這個 method
+- 通過 **static** 關鍵字可以滿足這兩個要求，當一個事物是 **static** 時意味著它不與定義它的 class 關聯，即使從來沒有使用那個 class 建立 object 也可以 call method 或存取 field
+    - 有些OOP語言用 **class data** 和 **class methods** 這兩個術語，一些Java文件也有用到
+- 將 **static** 放在定義之前就可以將 field 或 method 設為 **static**
+
+```java
+class StaticTest {
+  static int i = 47;
+}
+
+// 即使創建兩個 StaticTest object，StaticTest.i 也只有一份儲存空間
+StaticTest st1 = new StaticTest();
+StaticTest st2 = new StaticTest();
+```
+- `st1.i` 及 `st2.i` 都會是 47
+
+```java
+StaticTest.i++;
+```
+- 非 **static** 成員則不能這樣使用
+- ++ operator 對 i 進行遞增操作，此時 `st1.i` 與 `st2.i` 仍有相同的值 48
+
+#### 靜態方法範例
+
+```java
+class Incrementable {
+  static void increment() { StaticTest.i++; }
+}
+
+Incrementable.increment();
+
+Incrementable sf = new Incrementable();
+sf.increment();
+```
+
+## 執行第一個 Java program
+
+```java
+import java.util.*
+
+public class HelloDate {
+  public static void main(String[] args) {
+    System.out.println("Hello. it's: ");
+    System.out.println(new Date());
+  }
+}
+```
+- 如果是像現在一樣建立一個獨立運行的 process，文件中必須包含某個 class 與文件同名，否則編譯器會報錯
+- 這個 class 必須含有一個 **main()** 方法，`public static void main(String[] args)`
+    - public: 表示這是可由外部調用的方法
+    - 參數是一個 **String** object 的 array，這邊並未使用到 **args**，但Java 編譯器要求必須要有，因為要用來儲存 command line 參數
+### 編譯與運行
+
+- 安裝JDK，並設定好路徑確保 terminal 可以找到 **javac** 和 **java** 兩個執行檔
+```bash
+javac HelloDate.java
+```
+
+- 沒有錯誤訊息的話代表編譯完成，執行
+```bash
+java HelloDate
+```
+- 之後便會看到程式輸出的結果

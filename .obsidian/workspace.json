@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
+                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Basics.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d72f2dd20d36a36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
+                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
+                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md"
+                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md"
               }
             }
           },
@@ -139,7 +153,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -156,11 +170,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e4e652b9989ab3a9",
+  "active": "9d72f2dd20d36a36",
   "lastOpenFiles": [
+    "posts/Thinking in Java/Everything-Is-an-Object-Object-Class.md",
+    "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
+    "posts/Thinking in Java/Everything-Is-an-Object-Object-Basics.md",
+    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
+    "posts/Thinking in Java",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
     "posts/README.md",
-    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "posts/Cloud/Using startup scripts on Linux VMs.md",
     "leetcode/287. Find the Duplicate Number.md",
     "blogs/Untitled.md",
@@ -185,9 +203,6 @@
     "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
     "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
     "leetcode/1396. Design Underground System.md",
-    "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
-    "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
-    "leetcode/904. Fruit Into Baskets.md",
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "legacy",
@@ -206,7 +221,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160747.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160132.png",
     "Linux kernel/Untitled.canvas",
-    "Linux kernel/你所不知道的C語言/指標/assets",
     "Untitled.canvas",
     "產業研究/PCB.canvas",
     "legacy/知識樹.canvas"

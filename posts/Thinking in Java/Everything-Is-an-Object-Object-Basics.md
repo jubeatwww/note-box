@@ -1,0 +1,144 @@
+---
+sidebar_position: "2"
+tags:
+  - Java
+title: Everything Is an Object - Object Basics
+---
+## 用 reference 操作 object
+
+- 在Java中，一切都被視為 object
+- `String s;`
+	- 此處建立的 **只是** reference，並不是 object
+	- 若此時向 `s` 發送消息會有 runtime error
+	- 安全的做法是建立 reference 的同時便初始化
+	    - `String s = “asdf“;`
+
+## 必須由你建立所有object
+
+一旦建立 reference，就希望它與一個 object 關聯
+- 通常用 `new` 來實現
+- **new** 的意思為 _給我一個新的 object_
+
+`String s = “asdf”;`
+可以改寫為
+`String s = new String(“asdf“);`
+
+### Object 的儲存位置
+
+程式運行時，java是怎麼將物件放在記憶體的
+- register (寄存器):
+    - 最快的儲存區，因為它直接在CPU的內部，但數量極為有限
+    - 無法直接控制，但 C/C++ 允許向 compiler 建議分配方式
+- stack:
+    - 位於通用 RAM
+    - 透過 stack pointer 的上下移動可以分配/釋放內存
+    - 速度僅次於 register
+    - Java 系統必須知道儲存在 stack 內的所有項目的確切生命週期才能正確移動 stack pointer，限制程式的靈活性
+    - 某些資料存在 stack 中，尤其是 reference，但 java object 並不會放在這
+- heap:
+    - 也位於 RAM 的通用內存池，用來存放所有 Java object
+    - 相較於 stack 的好處是編譯器不需要知道數據存活多長時間，因此具備更大的彈性
+    - 使用 **new** 便可以自動分配
+    - 這種彈性也需要付出相對的代價: 分配及清理會比 stack 用掉更多時間
+- 常量儲存
+    - 通常放在 code 內部
+    - 由於 code 區塊不會被改變，，因此這做法提供對常量不變性的保護
+- 非 RAM 儲存
+    - 在 process 控制之外的資料
+    - 例如 stream, file
+
+### Object 中的特例: 基本類型 (Primitive)
+
+在程式設計中經常用到一系列小而簡單的類型，可以把他們想像成 **基本類型**
+- 因為用 **new** 將這類的 object 儲存在 heap 中往往不是很有效
+- Java 與 C++ 採用相同的方法，不用 **new** 來創造 variables，而是建立 **non-reference** 的”自動” variables
+- 這種 variables 直接儲存 value 並放在 stack 中，因此更加有效率
+
+#### 基本類型一覽
+Java 每種 primitive 的大小是不隨硬體架構變化的
+
+| Primitive | 大小      | Min                                                                                                                  | Max                                                                                                                  | 包裝器類型     |
+| --------- | ------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
+| boolean   | -       | -                                                                                                                    | -                                                                                                                    | Boolean   |
+| char      | 16 bits | Unicode 0                                                                                                            | Unicode 2^{16} - 1                                                                                                   | Character |
+| byte      | 8 bits  | -128                                                                                                                 | +127                                                                                                                 | Byte      |
+| short     | 16 bits | -2^{15}                                                                                                              | +2^{15}-1                                                                                                            | Short     |
+| int       | 32 bits | -2^{31}                                                                                                              | +2^{31}-1                                                                                                            | Integer   |
+| long      | 64 bits | -2^{63}                                                                                                              | +2^{63}-1                                                                                                            | Long      |
+| float     | 32 bits | [IEEE 754](https://app.heptabase.com/89fe36cd-97a8-4fc9-847b-644189528206/card/df87b686-3950-4638-a11e-2a33618472e3) | [IEEE 754](https://app.heptabase.com/89fe36cd-97a8-4fc9-847b-644189528206/card/df87b686-3950-4638-a11e-2a33618472e3) | Float     |
+| double    | 64 bits | [IEEE 754](https://app.heptabase.com/89fe36cd-97a8-4fc9-847b-644189528206/card/df87b686-3950-4638-a11e-2a33618472e3) | [IEEE 754](https://app.heptabase.com/89fe36cd-97a8-4fc9-847b-644189528206/card/df87b686-3950-4638-a11e-2a33618472e3) | Double    |
+| void      | -       | -                                                                                                                    | -                                                                                                                    | Void      |
+
+- 所有類型都有正負號 ⇒ Java 沒有 unsigned
+- **boolean** 佔的空間沒有明確指定，僅定義為能夠取字面值 `true` 或 `false`
+
+#### 包裝器 (Wrapper)
+
+- 所有的 primitives 都有對應的包裝器，用來在 heap 建立一個非 primitive 的 object
+
+```java
+char c = 'x';
+Character ch = new Character(c);
+Character ch = new Character('x');
+
+// Java SE5 自動包裝功能會自動將 primitive 轉換為包裝器類型
+Character ch = 'x';
+// 反向轉換
+char c = ch;
+```
+
+#### 高精度數字
+
+- Java 提供兩個高精度計算用的 class
+    - BigInteger: 支援任意長度的整數而不會丟失資料
+    - BigDecimal: 支援任意長度的浮點數，可以進行精確的貨幣計算
+- 雖然大體上屬於 “包裝器類“，但是沒有對應的 primitives
+- 這兩個 class 提供的方法讓可以用相同於 `int` 和 `float` 的方式來操作
+    - 但必須要 call function 的方式來調用，由於複雜度提升因此運算速度也比較慢
+#### Java 中的 Array
+
+- Java 會確保 array 被初始化
+- 不能在範圍之外訪問
+- 當創建一個 array，實際上就是創建了一個 array 的 reference
+
+
+## Java 的作用域
+
+### Java 的作用域與 C / C++ 的區別
+
+- C / C++ 中，作用域由大括號的位子決定
+```cpp
+{
+  int x = 12;
+  // Only x available
+  {
+    int q = 96;
+    // Both x and q available
+  }
+  //Only x available
+  // q is "out of scope"
+}
+```
+
+- 在C / C++ 中可以在較內層的作用域重複定義變數，Java 中不能這樣寫
+```java
+{
+  int x = 12;
+  {
+    int x = 96; // Illegal
+  }
+}
+```
+
+### Object 的作用域
+
+- Java Object 不具備和基本類型一樣的生命週期，當用 **new** 建立 Java object時他可以存活於作用域外
+
+```java
+{
+  String s = new String("a string");
+  // End of scope
+}
+```
+- reference 在作用域外就會消失，但 `s` 指向的 `String` object 仍會在記憶體裡
+- Java 的 _垃圾回收器(GC)_，會監視用 **new** 建立的 object，並且回收已經不會再被引用的 object，消除了因程式人員忘記釋放記憶體導致的 memory leak 問題
