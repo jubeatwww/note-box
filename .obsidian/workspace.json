@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c6b97a83a1e91436",
+        "id": "91e60170f7ddacf9",
         "type": "tabs",
         "children": [
           {
-            "id": "4dc65a142106b2f9",
+            "id": "f42eb8b2b63825ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md"
+                "file": "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md"
               }
             }
           },
@@ -156,11 +156,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4dc65a142106b2f9",
+  "active": "f42eb8b2b63825ed",
   "lastOpenFiles": [
-    "blogs/2024-04-21-在GCE上用 Container-Optmized OS 部署Elasticsearch (上).md",
+    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
+    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
     "posts/Cloud/Using startup scripts on Linux VMs.md",
-    "blogs/2024-04-21-在GCE上用 Container-Optmized OS 部署Elasticsearch  (下).md",
     "leetcode/287. Find the Duplicate Number.md",
     "blogs/Untitled.md",
     "blogs/authors.yml",

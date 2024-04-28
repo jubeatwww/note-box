@@ -3,7 +3,7 @@ tags:
   - cloud
   - gcp
   - terraform
-sidebar_position: "1"
+title: Google Compute Engine作為容器服務：部署Elasticsearch的新方法 (上)
 ---
 當需要在雲端快速部署可擴展的應用時，Google Compute Engine（GCE）配合Container-Optimized OS提供了一個高效的選擇
 下面將利用Terraform來部署一個Elasticsearch容器實例，並結合外接空白硬碟以優化數據遷移和存儲

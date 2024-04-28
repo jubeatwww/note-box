@@ -3,7 +3,7 @@ tags:
   - cloud
   - gcp
   - terraform
-sidebar_position: "2"
+title: Google Compute Engine作為容器服務：部署Elasticsearch的新方法 (下)
 ---
 ## 前言
 
