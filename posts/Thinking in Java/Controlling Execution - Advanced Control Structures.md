@@ -2,7 +2,7 @@
 sidebar_position: "42"
 tags:
   - Java
-title: Controlling Execution - Flow Control
+title: Controlling Execution - Advanced Control Structures
 slug: /thinking-in-java/controlling-execution-advanced-control-structures
 ---
 ## return
