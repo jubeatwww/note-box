@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md"
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md"
               }
             }
           },
@@ -158,13 +158,15 @@
   },
   "active": "fc1fb0cb61372172",
   "lastOpenFiles": [
+    "posts/Linux/systemd.md",
+    "posts/Linux/journalctl.md",
+    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "posts/Thinking in Java/Everything Is an Object - Class.md",
     "posts/Thinking in Java/Everything Is an Object - First Java Program.md",
     "posts/Thinking in Java/Operators - Arithmetic and Relations.md",
     "posts/Thinking in Java/Operators - Fundamentals.md",
     "posts/Thinking in Java/Operators - Logical, Bitwise, and Shift.md",
     "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
-    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "posts/Thinking in Java",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
@@ -179,8 +181,6 @@
     "leetcode/1721. Swapping Nodes in a Linked List.md",
     "().md",
     "posts/Cloud",
-    "posts/Linux/Systemd.md",
-    "posts/Linux/journalctl.md",
     "leetcode/19. Remove Nth Node From End of List.md",
     "posts/Linux",
     "leetcode/2130. Maximum Twin Sum of a Linked List.md",

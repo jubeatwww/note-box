@@ -1,6 +1,7 @@
 ---
 tags:
   - linux
+slug: /linux/systemd
 ---
 > [systemd.unit(5)](https://man7.org/linux/man-pages/man5/systemd.unit.5.html) => Linux manual page
 > [systemd.service(5)](https://man7.org/linux/man-pages/man5/systemd.service.5.html) ⇒ Linux manual page

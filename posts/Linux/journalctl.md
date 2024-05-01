@@ -1,6 +1,7 @@
 ---
 tags:
   - linux
+slug: /linux/journalctl
 ---
 > [journalctl(1)](https://man7.org/linux/man-pages/man1/journalctl.1.html) @ Linux manual page
 
