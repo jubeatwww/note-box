@@ -3,6 +3,7 @@ sidebar_position: "34"
 tags:
   - Java
 title: Operators - Specialized Uses and Conversions
+slug: thinking-in-java/operators-logical-specialized-uses-and-conversions
 ---
 ## 三元操作符 (Ternary if-else operator)
 

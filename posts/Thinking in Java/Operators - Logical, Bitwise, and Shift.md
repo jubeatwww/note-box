@@ -3,6 +3,7 @@ sidebar_position: "33"
 tags:
   - Java
 title: Operators - Logical, Bitwise, and Shift
+slug: thinking-in-java/operators-logical-bitwise-and-shift
 ---
 ## 邏輯操作符 (Logical operators)
 

@@ -3,6 +3,7 @@ sidebar_position: "24"
 tags:
   - Java
 title: Everything Is an Object - First Java Program
+slug: thinking-in-java/everything-is-an-object-object-program
 ---
 ## Building a Java program
 

@@ -2,7 +2,8 @@
 sidebar_position: "21"
 tags:
   - Java
-title: Everything Is an Object - Object Basics
+title: Everything Is an Object - Basics
+slug: thinking-in-java/everything-is-an-object-basics
 ---
 ## 用 reference 操作 object
 
