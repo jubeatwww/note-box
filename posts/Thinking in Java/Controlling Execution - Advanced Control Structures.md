@@ -1,0 +1,130 @@
+---
+sidebar_position: "42"
+tags:
+  - Java
+title: Controlling Execution - Flow Control
+slug: /thinking-in-java/controlling-execution-advanced-control-structures
+---
+## return
+
+- 利用 **return** 會退出方法的特性，可以省略某些 else
+```java
+public class IfElse2 {
+  static int test(int testval, int target) {
+    if(testval > target)
+      return +1;
+    else if(testval < target)
+      return -1;
+    return 0; // Match
+  }
+  public static void main(String[] args) {
+    System.out.println(test(10, 5));
+    System.out.println(test(5, 10));
+    System.out.println(test(5, 5));
+  }
+} /* Output:
+1
+-1
+0
+*/
+```
+
+- 如果在返回 **void** 的方法中沒有 **return**，結尾處會有一個隱式的 **return**
+
+## break and continue
+
+- break 用於強制退出循環
+- continue 停止當前的迭代，退回循環起始位置開始下一次迭代 (或離開)
+
+```java
+public class BreakAndContinue {
+  public static void main(String[] args) {
+    for(int i = 0; i < 100; i++) {
+      if(i == 74) break; // Out of for loop
+      if(i % 9 != 0) continue; // Next iteration
+      System.out.print(i + " ");
+    }
+    System.out.println();
+    // Using foreach:
+    for(int i : range(100)) {
+      if(i == 74) break; // Out of for loop
+      if(i % 9 != 0) continue; // Next iteration
+      System.out.print(i + " ");
+    }
+    System.out.println();
+    int i = 0;
+    // An "infinite loop":
+    while(true) {
+      i++;
+      int j = i * 27;
+      if(j == 1269) break; // Out of loop
+      if(i % 10 != 0) continue; // Top of loop
+      System.out.print(i + " ");
+    }
+  }
+} /* Output:
+0 9 18 27 36 45 54 63 72
+0 9 18 27 36 45 54 63 72
+10 20 30 40
+*/
+```
+
+## switch
+
+```java
+switch (intergralSelector) {
+    case integralValue1 : statement; break;
+    case integralValue2 : statement; break;
+    case integralValue3 : statement; break;
+    case integralValue4 : statement; break;
+    // ...
+    default: statement;
+}
+```
+
+- integralSelector: 可以產生整數值的表達式
+- switch 會將 integralSelector 的結果與每個 integralValue 比較
+    - 相符就執行，沒有相符的就執行 **default**
+- break 會使得執行流程跳到 switch 的尾端，若忽略 break，會繼續執行後面的case直到遇到 break
+- switch 的選擇因子可以是 **int** 或 **char**，使用其他類型是不會 work 的，只能使用 if 語句
+	- Java 5 以上版本支援 enum（枚舉）類型
+	- 從 Java 7 開始，`switch` 也支援 `String` 類型
+
+```java
+public class VowelsAndConsonants {
+  public static void main(String[] args) {
+    Random rand = new Random(47);
+    for(int i = 0; i < 100; i++) {
+      int c = rand.nextInt(26) + 'a';
+      System.out.print((char)c + ", " + c + ": ");
+      switch(c) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u': System.out.println("vowel");
+                  break;
+        case 'y':
+        case 'w': System.out.println("Sometimes a vowel");
+                  break;
+        default:  System.out.println("consonant");
+      }
+    }
+  }
+} /* Output:
+y, 121: Sometimes a vowel
+n, 110: consonant
+z, 122: consonant
+b, 98: consonant
+r, 114: consonant
+n, 110: consonant
+y, 121: Sometimes a vowel
+g, 103: consonant
+c, 99: consonant
+f, 102: consonant
+o, 111: vowel
+w, 119: Sometimes a vowel
+z, 122: consonant
+...
+*/
+```
