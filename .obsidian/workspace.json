@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md"
+                "file": "leetcode/2483. Minimum Penalty for a Shop.md"
               }
             }
           },
@@ -158,37 +158,37 @@
   },
   "active": "fc1fb0cb61372172",
   "lastOpenFiles": [
-    "posts/Linux/systemd.md",
-    "posts/Linux/journalctl.md",
-    "posts/Thinking in Java/Everything Is an Object - Basics.md",
-    "posts/Thinking in Java/Everything Is an Object - Class.md",
-    "posts/Thinking in Java/Everything Is an Object - First Java Program.md",
-    "posts/Thinking in Java/Operators - Arithmetic and Relations.md",
-    "posts/Thinking in Java/Operators - Fundamentals.md",
-    "posts/Thinking in Java/Operators - Logical, Bitwise, and Shift.md",
-    "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
-    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
-    "posts/Thinking in Java",
-    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
-    "posts/README.md",
-    "posts/Cloud/Using startup scripts on Linux VMs.md",
-    "leetcode/287. Find the Duplicate Number.md",
-    "blogs/Untitled.md",
-    "blogs/authors.yml",
-    "blogs",
-    "leetcode/86. Partition List.md",
-    "leetcode/138. Copy List with Random Pointer.md",
-    "leetcode/1721. Swapping Nodes in a Linked List.md",
-    "().md",
-    "posts/Cloud",
-    "leetcode/19. Remove Nth Node From End of List.md",
-    "posts/Linux",
-    "leetcode/2130. Maximum Twin Sum of a Linked List.md",
-    "leetcode/1898. Maximum Number of Removable Characters.md",
-    "leetcode/143. Reorder List.md",
-    "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/2405. Optimal Partition of String.md",
     "leetcode/2348. Number of Zero-Filled Subarrays.md",
+    "leetcode/2306. Naming a Company.md",
+    "leetcode/2130. Maximum Twin Sum of a Linked List.md",
+    "leetcode/1898. Maximum Number of Removable Characters.md",
+    "leetcode/1721. Swapping Nodes in a Linked List.md",
+    "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
+    "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
+    "leetcode/1396. Design Underground System.md",
+    "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
+    "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
+    "leetcode/904. Fruit Into Baskets.md",
+    "leetcode/901. Online Stock Span.md",
+    "leetcode/739. Daily Temperatures.md",
+    "leetcode/441. Arranging Coins.md",
+    "leetcode/438. Find All Anagrams in a String.md",
+    "leetcode/402. Remove K Digits.md",
+    "leetcode/287. Find the Duplicate Number.md",
+    "leetcode/143. Reorder List.md",
+    "leetcode/138. Copy List with Random Pointer.md",
+    "leetcode/128. Longest Consecutive Sequence.md",
+    "leetcode/86. Partition List.md",
+    "leetcode/68. Text Justification.md",
+    "leetcode/19. Remove Nth Node From End of List.md",
+    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
+    "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
+    "posts/Thinking in Java",
+    "blogs/authors.yml",
+    "blogs",
+    "posts/Cloud",
+    "posts/Linux",
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "legacy",
