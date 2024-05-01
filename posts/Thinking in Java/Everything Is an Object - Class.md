@@ -3,7 +3,7 @@ sidebar_position: "23"
 tags:
   - Java
 title: Everything Is an Object - Class
-slug: thinking-in-java/everything-is-an-object-object-class
+slug: /thinking-in-java/everything-is-an-object-object-class
 ---
 ## Java Class Fundamentals
 

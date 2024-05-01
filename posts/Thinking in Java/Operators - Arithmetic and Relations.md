@@ -3,7 +3,7 @@ sidebar_position: "32"
 tags:
   - Java
 title: Operators - Arithmetic and Relations
-slug: thinking-in-java/operators-arithmetic-and-relations
+slug: /thinking-in-java/operators-arithmetic-and-relations
 ---
 ## 算數操作符 (Mathematical operators)
 

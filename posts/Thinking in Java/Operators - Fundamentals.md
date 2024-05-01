@@ -3,7 +3,7 @@ sidebar_position: "31"
 tags:
   - Java
 title: Operators - Fundamentals
-slug: thinking-in-java/operators-fundamentals
+slug: /thinking-in-java/operators-fundamentals
 ---
 
 ## Operators Basics

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md"
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md"
               }
             }
           },
@@ -158,13 +158,13 @@
   },
   "active": "fc1fb0cb61372172",
   "lastOpenFiles": [
-    "posts/Thinking in Java/Operators - Logical, Bitwise, and Shift.md",
-    "posts/Thinking in Java/Operators - Fundamentals.md",
-    "posts/Thinking in Java/Operators - Arithmetic and Relations.md",
     "posts/Thinking in Java/Everything Is an Object - Class.md",
-    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "posts/Thinking in Java/Everything Is an Object - First Java Program.md",
+    "posts/Thinking in Java/Operators - Arithmetic and Relations.md",
+    "posts/Thinking in Java/Operators - Fundamentals.md",
+    "posts/Thinking in Java/Operators - Logical, Bitwise, and Shift.md",
     "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
+    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "posts/Thinking in Java",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-1-setup.md",
