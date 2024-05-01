@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0de6d5dd92765414",
+        "id": "b9f056374ace3fd4",
         "type": "tabs",
         "children": [
           {
-            "id": "e4e652b9989ab3a9",
+            "id": "fc1fb0cb61372172",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Basics.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9d72f2dd20d36a36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
+                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
+                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
+                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md"
+                "file": "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md"
               }
             }
           },
@@ -153,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -170,10 +156,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9d72f2dd20d36a36",
+  "active": "fc1fb0cb61372172",
   "lastOpenFiles": [
-    "posts/Thinking in Java/Everything-Is-an-Object-Object-Class.md",
+    "posts/Thinking in Java/Operators-Arithmetic-and-Relations.md",
+    "posts/Thinking in Java/Operators-Logical-Specialized-Uses-and-Conversions.md",
+    "posts/Thinking in Java/Operators-Fundamentals.md",
+    "posts/Thinking in Java/Operators-Logical-Bitwise-and-Shift.md",
     "posts/Thinking in Java/Everything-Is-an-Object-Object-Program.md",
+    "posts/Thinking in Java/Everything-Is-an-Object-Object-Class.md",
     "posts/Thinking in Java/Everything-Is-an-Object-Object-Basics.md",
     "blogs/2024-04-21-deploying-elasticsearch-on-gce-with-terraform-part-2-advanced-issues.md",
     "posts/Thinking in Java",
@@ -199,10 +189,6 @@
     "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/2405. Optimal Partition of String.md",
     "leetcode/2348. Number of Zero-Filled Subarrays.md",
-    "leetcode/2306. Naming a Company.md",
-    "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
-    "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
-    "leetcode/1396. Design Underground System.md",
     "leetcode/assets/441. Arranging Coins-assets.png",
     "leetcode/assets",
     "legacy",

@@ -1,0 +1,209 @@
+---
+sidebar_position: "33"
+tags:
+  - Java
+title: Operators - Logical, Bitwise, and Shift
+---
+## 邏輯操作符 (Logical operators)
+
+- `&&(and)`、`||(or)`、`!(not)`，依照參數的邏輯關係生成 **boolean** 值
+- 與 C/C++ 不同，Java 中不能將非 **boolean** 的值直接用於邏輯表達式中，必須先使用 relational operator 轉換為 **boolean** 後才能做比較
+
+```java
+// 常見錯誤
+// C++ 中常使用 while (node) 簡寫 while (node != NULL)
+
+// while (node) {} 在 Java中會報錯
+while (node != null) {}
+```
+
+### 短路 (Short-circuiting)
+- `&&`: `condition1 && condition2`，當 `condition1` 為 `false`，已經可以確定整個表達式的結果，則不會計算 `condition2`
+- `||`: `condition1 || condition2`，當 `condition1` 為 `true`，已經可以確定整個表達式的結果，則不計算 `condition2`
+
+```java
+public class ShortCircuit {
+  static boolean test1(int val) {
+    print("test1(" + val + ")");
+    print("result: " + (val < 1));
+    return val < 1;
+  }
+  static boolean test2(int val) {
+    print("test2(" + val + ")");
+    print("result: " + (val < 2));
+    return val < 2;
+  }
+  static boolean test3(int val) {
+    print("test3(" + val + ")");
+    print("result: " + (val < 3));
+    return val < 3;
+  }
+  public static void main(String[] args) {
+    boolean b = test1(0) && test2(2) && test3(2);
+    print("expression is " + b);
+  }
+} /* Output:
+test1(0)
+result: true
+test2(2)
+result: false
+expression is false
+*/
+```
+- `test2` 產生了一個 `false`，讓整個表達式為 `false`，則會發現 `test3(2)` 並沒有被執行
+
+## 直接常量 (Literals)
+
+- 直接常量是在編程中直接使用的數值，編譯器通常可以根據上下文推斷出常量的數據類型
+- 在有歧義的情況下需要開發者明確指定數據類型
+
+```java
+public class Literals {
+  public static void main(String[] args) {
+    int i1 = 0x2f; // Hexadecimal (lowercase)
+    print("i1: " + Integer.toBinaryString(i1));
+    int i2 = 0X2F; // Hexadecimal (uppercase)
+    print("i2: " + Integer.toBinaryString(i2));
+    int i3 = 0177; // Octal (leading zero)
+    print("i3: " + Integer.toBinaryString(i3));
+    char c = 0xffff; // max char hex value
+    print("c: " + Integer.toBinaryString(c));
+    byte b = 0x7f; // max byte hex value
+    print("b: " + Integer.toBinaryString(b));
+    short s = 0x7fff; // max short hex value
+    print("s: " + Integer.toBinaryString(s));
+    long n1 = 200L; // long suffix
+    long n2 = 200l; // long suffix (but can be confusing)
+    long n3 = 200;
+    float f1 = 1;
+    float f2 = 1F; // float suffix
+    float f3 = 1f; // float suffix
+    double d1 = 1d; // double suffix
+    double d2 = 1D; // double suffix
+    // (Hex and Octal also work with long)
+  }
+} /* Output:
+i1: 101111
+i2: 101111
+i3: 1111111
+c: 1111111111111111
+b: 1111111
+s: 111111111111111
+*/
+```
+
+- 超出類型範圍的值會導致編譯錯誤
+- 如果編譯器能夠自動識別類型，則可以省略型別後綴，例如 `long n = 200;` 中的 `L` 可以省略
+
+### 指數 (Exponential notation)
+
+- 指數表示法用於表示非常大或非常小的數字，並且常常用在浮點數上
+```java
+public class Exponents {
+  public static void main(String[] args) {
+    // Uppercase and lowercase 'e' are the same:
+    float expFloat = 1.39e-43f;
+    expFloat = 1.39E-43f;
+    System.out.println(expFloat);
+    double expDouble = 47e47d; // 'd' is optional
+    double expDouble2 = 47e47; // Automatically double
+    System.out.println(expDouble);
+  }
+} /* Output:
+1.39E-43
+4.7E48
+*/
+```
+
+- 雖然一般來說 **e** 會被當成自然數，C/C++ 和 Java 保留了來自 FORTRAN 的 **e** 表示法，用來表示 10 的冪次
+- 因此 `1.39e-43f` 實際上為 $1.39 \times 10^{-43}$
+```java
+float f1 = 1e-43f;
+```
+- 未明確指定 `f` 或 `F` 的指數常量默認為 **double** 類型，若要使用在 **float** 變量中，需進行轉型或明確標註
+
+## 二元操作符 (Bitwise operators)
+
+- 在 Java 中，二元操作符主要用於處理整數類型（如 int 和 long）的二進制位：
+```java
+// XOR: ^
+// AND: &
+// OR:  |
+// NOT: ~
+
+// 定義變數
+int a = 12;  // 二進制表達為 1100
+int b = 6;   // 二進制表達為 0110
+
+// XOR: ^ (異或操作符)
+int resultXor = a ^ b;  // 結果是 10 (二進制為 1010)
+
+// AND: & (與操作符)
+int resultAnd = a & b;  // 結果是 4 (二進制為 0100)
+
+// OR: | (或操作符)
+int resultOr = a | b;  // 結果是 14 (二進制為 1110)
+
+// NOT: ~ (非操作符，是一元操作符)
+int resultNot = ~a;  // 對 a 的每一位進行反轉
+```
+
+- 這些操作符也可以與賦值操作符 `=` 結合使用，形成複合賦值操作符，使代碼更簡潔：
+```java
+// 使用複合賦值操作符
+a ^= b;  // a 現在等於 10
+a |= b;  // a 現在等於 14
+a &= b;  // a 現在等於 4
+```
+> 注意，`~` 是一個一元操作符，意味著它只需要一個操作數。因此，它不能與賦值操作符 `=` 結合使用
+- 可與 `=` 一起使用，例如 `^=`、`|=`
+- `~`是一元操作符，不可與 `=` 一起運作
+
+## 位移操作符 Shift Operator
+
+Java 中的位移操作符用於對整數類型的數字進行二進位移動，與 C/C++ 中的操作符相似：
+- `<<`: 向左位移。位移後低位補0
+- `>>`: 向右位移。如果數字為正，高位補0；如果為負，高位補1
+- Java 中新增了 `>>>`: 無符號向右位移。無論原始數字正負，高位始終補0
+
+- 只可以處理整數
+- 這些操作符可以與賦值操作符結合使用，形成 `<<=`、`>>=` 和 `>>>=`
+- 在執行位移操作時，`byte` 和 `short` 類型的數據首先會被擴展為 `int` 類型，然後進行位移，在這種情況下可能會出現 -1 的錯誤結果
+
+```java
+
+public class URShift {
+  public static void main(String[] args) {
+    int i = -1;
+    print(Integer.toBinaryString(i));
+    i >>>= 10;
+    print(Integer.toBinaryString(i));
+    long l = -1;
+    print(Long.toBinaryString(l));
+    l >>>= 10;
+    print(Long.toBinaryString(l));
+    short s = -1;
+    print(Integer.toBinaryString(s));
+    s >>>= 10;
+    print(Integer.toBinaryString(s));
+    byte b = -1;
+    print(Integer.toBinaryString(b));
+    b >>>= 10;
+    print(Integer.toBinaryString(b));
+    b = -1;
+    print(Integer.toBinaryString(b));
+    print(Integer.toBinaryString(b>>>10));
+  }
+} /* Output:
+11111111111111111111111111111111
+1111111111111111111111
+1111111111111111111111111111111111111111111111111111111111111111
+111111111111111111111111111111111111111111111111111111
+11111111111111111111111111111111
+11111111111111111111111111111111
+11111111111111111111111111111111
+11111111111111111111111111111111
+11111111111111111111111111111111
+1111111111111111111111
+*/
+```

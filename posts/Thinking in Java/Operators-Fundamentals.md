@@ -1,0 +1,104 @@
+---
+sidebar_position: "31"
+tags:
+  - Java
+title: Operators - Fundamentals
+---
+
+## Operators Basics
+
+- Java operators 接受一個或多個參數，並生成一個新值
+    - 有些會改變操作數自身的值
+    - 例如，自增（`++`）、自減（`--`）和賦值（`=`）operator 會直接修改 operand 的值
+- 參數型式與普通的方法調用不同，但效果相同
+	- 例如 `x + y` 與 `add(x, y)`，但兩者效果相同，皆為求和
+- `+-*/=`等常見 operator 與其它編程語言如 C++、Python 等類似
+- 幾乎所有操作符（如算術操作符）在 Java 中僅適用於基本類型（primitives），例如 int、float 等
+    - 例外: `=`、`==`、`!=` 這些 operator 能操作所有 object
+    - 在 Java 中，**String** 類型特別支持 + 和 += 操作符，用於連接字符串
+## 優先級 (Precedence)
+
+- 在 Java 中，運算符的優先級與一般數學四則運算的規則相同，即先進行乘法和除法，然後進行加法和減法
+- 使用括號可以改變運算的順序，括號內的運算會優先處理，這對於控制運算順序十分重要
+
+```java
+public class Precedence {
+  public static void main(String[] args) {
+    int x = 1, y = 2, z = 3;
+    int a = x + y - 2/2 + z; // 這裡先計算 2/2 等於 1，然後按照加減法順序計算其餘部分
+    int b = x + (y - 2)/(2 + z); // 括號內的運算先行，然後進行除法和加法
+    System.out.println("a = " + a + " b = " + b);
+  }
+}
+/* Output:
+a = 5 b = 1
+*/
+```
+> 當 `+` 操作符用於字符串和非字符串類型的組合時，Java 編譯器會自動將非字符串元素轉換為 **String**。這一特性使得連接 **String** 和其他數據類型變得非常方便
+
+### 賦值 (Assignment)
+
+#### 基本概念
+- 操作符 `=`: 取右邊的值，複製給左邊
+- 右值可以是任何常數、變數、表達式
+- 左值必須是一個明確已命名的變數，這意味著**必須有個物理空間可以儲存等號右邊的值**
+	- 例如: `a = 4`可以，`4 = a` 則不行
+
+#### Object 的賦值行為
+- 當對 object 操作時，賦值操作實際上是將 reference 複製過去
+	- 因此就算執行 `c = d` ，c 和 d 都會指向同一個 object
+	- 這種現象被稱為 **別名現象(aliasing)**
+
+```java
+class Tank {
+  int level;
+}	
+
+public class Assignment {
+  public static void main(String[] args) {
+    Tank t1 = new Tank();
+    Tank t2 = new Tank();
+    t1.level = 9;
+    t2.level = 47;
+    print("1: t1.level: " + t1.level +
+          ", t2.level: " + t2.level);
+    t1 = t2;
+    print("2: t1.level: " + t1.level +
+          ", t2.level: " + t2.level);
+    t1.level = 27;
+    print("3: t1.level: " + t1.level +
+          ", t2.level: " + t2.level);
+  }
+} /* Output:
+1: t1.level: 9, t2.level: 47
+2: t1.level: 47, t2.level: 47
+3: t1.level: 27, t2.level: 27
+*/
+```
+- 對 `t1` 賦值的時候 reference 會被覆蓋，原本的 `t1` 會被GC回收
+- `t1.level = t2.level` 才可以保證兩個 object的獨立
+#### 方法調用中的別名問題
+
+```java
+class Letter {
+  char c;
+}
+
+public class PassObject {
+  static void f(Letter y) {
+    y.c = 'z';
+  }
+  public static void main(String[] args) {
+    Letter x = new Letter();
+    x.c = 'a';
+    print("1: x.c: " + x.c);
+    f(x);
+    print("2: x.c: " + x.c);
+  }
+} /* Output:
+1: x.c: a
+2: x.c: z
+*/
+```
+
+> 在 Java 中，方法調用通常不會創建傳遞給它的對象的副本。因此，如 `f()` 函數中對參數的修改將反映在原對象上，這與一些其他語言的行為不同

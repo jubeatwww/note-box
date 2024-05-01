@@ -1,5 +1,5 @@
 ---
-sidebar_position: "2"
+sidebar_position: "21"
 tags:
   - Java
 title: Everything Is an Object - Object Basics
