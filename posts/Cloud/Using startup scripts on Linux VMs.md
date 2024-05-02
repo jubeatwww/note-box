@@ -3,6 +3,14 @@ tags:
   - gcp
   - cloud
 slug: /cloud/using-startup-scripts-on-linux-vms
+description: 本文介紹如何在Linux虛擬機上使用啟動腳本進行自動化配置，透過Google Cloud Platform提升管理效率和系統性能
+keywords:
+  - Linux VM
+  - 啟動腳本
+  - 自動化配置
+  - GCP
+  - Google Cloud
+  - 虛擬機
 ---
 在 Google Cloud Platform (GCP) 上，使用 Linux 虛擬機（VM）的啟動腳本可以自動執行各種任務，如軟件安裝、環境設置等，從而簡化和自動化 VM 的配置過程
 

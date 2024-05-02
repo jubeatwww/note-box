@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md"
+                "file": "posts/Cloud/Using startup scripts on Linux VMs.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "8bacbaebd2397991",
   "lastOpenFiles": [
-    "posts/Thinking in Java/Controlling Execution - Flow Control.md",
     "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
+    "posts/Thinking in Java/Controlling Execution - Flow Control.md",
     "posts/Thinking in Java/Controlling Executiontest.md",
     "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "posts/Thinking in Java/Controlling Execution 1.md",
