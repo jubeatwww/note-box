@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3717019134624038",
+        "id": "94180ee57a39626a",
         "type": "tabs",
         "children": [
           {
-            "id": "8bacbaebd2397991",
+            "id": "a5cccd8b60e08947",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
+                "file": "leetcode/662. Maximum Width of Binary Tree.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
+                "file": "leetcode/662. Maximum Width of Binary Tree.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
+                "file": "leetcode/662. Maximum Width of Binary Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md"
+                "file": "leetcode/662. Maximum Width of Binary Tree.md"
               }
             }
           },
@@ -156,15 +156,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8bacbaebd2397991",
+  "active": "a5cccd8b60e08947",
   "lastOpenFiles": [
+    "leetcode/958. Check Completeness of a Binary Tree.md",
+    "leetcode/1376. Time Needed to Inform All Employees.md",
+    "leetcode/662. Maximum Width of Binary Tree.md",
+    "leetcode/441. Arranging Coins.md",
+    "leetcode/19. Remove Nth Node From End of List.md",
+    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "posts/Linux/journalctl.md",
     "posts/Linux/systemd.md",
     "posts/Cloud/Using startup scripts on Linux VMs.md",
     "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
     "posts/Thinking in Java/Controlling Execution - Flow Control.md",
     "posts/Thinking in Java/Controlling Executiontest.md",
-    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "posts/Thinking in Java/Controlling Execution 1.md",
     "leetcode/2483. Minimum Penalty for a Shop.md",
     "leetcode/2405. Optimal Partition of String.md",
@@ -179,11 +184,6 @@
     "leetcode/1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold.md",
     "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
     "leetcode/904. Fruit Into Baskets.md",
-    "leetcode/901. Online Stock Span.md",
-    "leetcode/739. Daily Temperatures.md",
-    "leetcode/441. Arranging Coins.md",
-    "leetcode/438. Find All Anagrams in a String.md",
-    "leetcode/402. Remove K Digits.md",
     "posts/Thinking in Java",
     "blogs/authors.yml",
     "blogs",
