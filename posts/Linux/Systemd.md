@@ -2,6 +2,13 @@
 tags:
   - linux
 slug: /linux/systemd
+description: 詳細介紹Linux的systemd服務管理器，包括服務設定、單位類型和管理命令
+keywords:
+  - Linux
+  - systemd
+  - 服務管理
+  - 系統啟動
+  - systemd單位文件
 ---
 > [systemd.unit(5)](https://man7.org/linux/man-pages/man5/systemd.unit.5.html) => Linux manual page
 > [systemd.service(5)](https://man7.org/linux/man-pages/man5/systemd.service.5.html) ⇒ Linux manual page

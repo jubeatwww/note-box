@@ -4,6 +4,15 @@ tags:
   - Java
 title: Everything Is an Object - Basics
 slug: /thinking-in-java/everything-is-an-object-basics
+description: 本文深入探討《Thinking in Java》一書中的核心概念—一切皆為物件。從基本類型到記憶體管理、作用域的理解，本讀書筆記詳細解釋Java的物件導向程式設計基礎，適合初學者與進階程式設計師參考使用
+keywords:
+  - Java基礎
+  - 物件導向程式設計
+  - Java記憶體管理
+  - Java變數
+  - Java作用域
+  - Java教學
+  - 程式設計
 ---
 ## 用 reference 操作 object
 

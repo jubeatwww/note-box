@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md",
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Cloud/Using startup scripts on Linux VMs.md"
+                "file": "posts/Thinking in Java/Everything Is an Object - Basics.md"
               }
             }
           },
@@ -158,6 +158,9 @@
   },
   "active": "8bacbaebd2397991",
   "lastOpenFiles": [
+    "posts/Linux/journalctl.md",
+    "posts/Linux/systemd.md",
+    "posts/Cloud/Using startup scripts on Linux VMs.md",
     "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
     "posts/Thinking in Java/Controlling Execution - Flow Control.md",
     "posts/Thinking in Java/Controlling Executiontest.md",
@@ -181,9 +184,6 @@
     "leetcode/441. Arranging Coins.md",
     "leetcode/438. Find All Anagrams in a String.md",
     "leetcode/402. Remove K Digits.md",
-    "leetcode/287. Find the Duplicate Number.md",
-    "leetcode/143. Reorder List.md",
-    "leetcode/138. Copy List with Random Pointer.md",
     "posts/Thinking in Java",
     "blogs/authors.yml",
     "blogs",

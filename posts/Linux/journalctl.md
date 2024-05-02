@@ -2,6 +2,12 @@
 tags:
   - linux
 slug: /linux/journalctl
+description: 完整指南介紹如何使用Linux的journalctl命令行工具來管理系統日誌
+keywords:
+  - Linux
+  - journalctl
+  - 系統日誌
+  - 日誌管理
 ---
 > [journalctl(1)](https://man7.org/linux/man-pages/man1/journalctl.1.html) @ Linux manual page
 
