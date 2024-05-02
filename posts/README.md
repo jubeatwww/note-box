@@ -1,6 +1,8 @@
 ---
 slug: /
 sidebar_position: "1"
+title: Shar07ech 技術筆記
+description: 探索軟件開發和技術學習的專業筆記，包括從基礎程式語言到複雜數據結構的深入分析。這裡使用卡片盒筆記法（Zettelkasten）整理知識，提供LeetCode解題思路、技術面試準備和最新技術文獻的詳細解析，助你在技術路上不斷前行
 ---
 
 ## 網站說明 

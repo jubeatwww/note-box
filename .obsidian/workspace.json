@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/662. Maximum Width of Binary Tree.md",
+                "file": "posts/README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/662. Maximum Width of Binary Tree.md",
+                "file": "posts/README.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/662. Maximum Width of Binary Tree.md",
+                "file": "posts/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/662. Maximum Width of Binary Tree.md"
+                "file": "posts/README.md"
               }
             }
           },
@@ -158,9 +158,9 @@
   },
   "active": "a5cccd8b60e08947",
   "lastOpenFiles": [
+    "leetcode/662. Maximum Width of Binary Tree.md",
     "leetcode/958. Check Completeness of a Binary Tree.md",
     "leetcode/1376. Time Needed to Inform All Employees.md",
-    "leetcode/662. Maximum Width of Binary Tree.md",
     "leetcode/441. Arranging Coins.md",
     "leetcode/19. Remove Nth Node From End of List.md",
     "posts/Thinking in Java/Everything Is an Object - Basics.md",
