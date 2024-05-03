@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/1448. Count Good Nodes in Binary Tree.md",
+                "file": "leetcode/98. Validate Binary Search Tree.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/1448. Count Good Nodes in Binary Tree.md",
+                "file": "leetcode/98. Validate Binary Search Tree.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/1448. Count Good Nodes in Binary Tree.md",
+                "file": "leetcode/98. Validate Binary Search Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/1448. Count Good Nodes in Binary Tree.md"
+                "file": "leetcode/98. Validate Binary Search Tree.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -166,9 +166,9 @@
   },
   "active": "a5cccd8b60e08947",
   "lastOpenFiles": [
+    "leetcode/1448. Count Good Nodes in Binary Tree.md",
     "leetcode/98. Validate Binary Search Tree.md",
     "posts/README.md",
-    "leetcode/1448. Count Good Nodes in Binary Tree.md",
     "leetcode/662. Maximum Width of Binary Tree.md",
     "leetcode/958. Check Completeness of a Binary Tree.md",
     "leetcode/1376. Time Needed to Inform All Employees.md",
