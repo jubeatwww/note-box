@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
+                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
+                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
+                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md"
+                "file": "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md"
               }
             }
           },
@@ -166,6 +166,7 @@
   },
   "active": "8c8bbf7f5c7fb975",
   "lastOpenFiles": [
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.6 Variable Argument Lists.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.5 Array initialization.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.4 Class Member Initialization.md",
@@ -181,7 +182,6 @@
     "posts/Thinking in Java/Ch3. Operators/3.1 Fundamentals.md",
     "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
     "posts/Thinking in Java/Ch4. Controlling Execution/4.2 Advanced Control Structures.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
     "posts/Thinking in Java/Ch4. Controlling Execution",
     "posts/Thinking in Java/Ch3. Operators",
     "posts/Thinking in Java/Ch2. Everything is an Object",
