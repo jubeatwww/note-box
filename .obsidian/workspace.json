@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "94180ee57a39626a",
+        "id": "d6096412f8e933ec",
         "type": "tabs",
         "children": [
           {
-            "id": "a5cccd8b60e08947",
+            "id": "8c8bbf7f5c7fb975",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/98. Validate Binary Search Tree.md",
+                "file": "posts/Thinking in Java/Initialization & Cleanup/Enumerated types.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/98. Validate Binary Search Tree.md",
+                "file": "posts/Thinking in Java/Initialization & Cleanup/Enumerated types.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/98. Validate Binary Search Tree.md",
+                "file": "posts/Thinking in Java/Initialization & Cleanup/Enumerated types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/98. Validate Binary Search Tree.md"
+                "file": "posts/Thinking in Java/Initialization & Cleanup/Enumerated types.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -164,34 +164,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a5cccd8b60e08947",
+  "active": "8c8bbf7f5c7fb975",
   "lastOpenFiles": [
-    "leetcode/1448. Count Good Nodes in Binary Tree.md",
+    "posts/Thinking in Java/Initialization & Cleanup/Variable Argument Lists.md",
+    "posts/Thinking in Java/Initialization & Cleanup/Enumerated types.md",
+    "posts/Thinking in Java/Initialization & Cleanup/Array initialization.md",
+    "posts/Thinking in Java/Initialization & Cleanup/Class Member Initialization.md",
+    "posts/Thinking in Java/Initialization & Cleanup/Constructing Objects.md",
+    "posts/Thinking in Java/Initialization & Cleanup/Finalization and garbage collection.md",
+    "posts/Thinking in Java/Initialization & Cleanup/The This keyword.md",
+    "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
+    "posts/Thinking in Java/Operators - Logical, Bitwise, and Shift.md",
+    "posts/Thinking in Java/Operators - Logical Specialized Uses and Conversions.md",
+    "posts/Thinking in Java/Operators - Fundamentals.md",
+    "posts/Thinking in Java/Everything Is an Object - First Java Program.md",
+    "posts/Thinking in Java/Everything Is an Object - Basics.md",
+    "posts/Thinking in Java/Controlling Execution - Flow Control.md",
     "leetcode/98. Validate Binary Search Tree.md",
+    "posts/Thinking in Java/Initialization & Cleanup",
+    "leetcode/128. Longest Consecutive Sequence.md",
+    "leetcode/68. Text Justification.md",
+    "leetcode/86. Partition List.md",
+    "leetcode/1448. Count Good Nodes in Binary Tree.md",
     "posts/README.md",
     "leetcode/662. Maximum Width of Binary Tree.md",
     "leetcode/958. Check Completeness of a Binary Tree.md",
     "leetcode/1376. Time Needed to Inform All Employees.md",
     "leetcode/441. Arranging Coins.md",
     "leetcode/19. Remove Nth Node From End of List.md",
-    "posts/Thinking in Java/Everything Is an Object - Basics.md",
     "posts/Linux/journalctl.md",
-    "posts/Linux/systemd.md",
-    "posts/Cloud/Using startup scripts on Linux VMs.md",
-    "posts/Thinking in Java/Controlling Execution - Advanced Control Structures.md",
-    "posts/Thinking in Java/Controlling Execution - Flow Control.md",
-    "posts/Thinking in Java/Controlling Executiontest.md",
-    "posts/Thinking in Java/Controlling Execution 1.md",
-    "leetcode/2483. Minimum Penalty for a Shop.md",
-    "leetcode/2405. Optimal Partition of String.md",
-    "leetcode/2348. Number of Zero-Filled Subarrays.md",
-    "leetcode/2306. Naming a Company.md",
-    "leetcode/2130. Maximum Twin Sum of a Linked List.md",
-    "leetcode/1898. Maximum Number of Removable Characters.md",
-    "leetcode/1721. Swapping Nodes in a Linked List.md",
-    "leetcode/1498. Number of Subsequences That Satisfy the Given Sum Condition.md",
-    "leetcode/1456. Maximum Number of Vowels in a Substring of Given Length.md",
-    "leetcode/1396. Design Underground System.md",
     "posts/Thinking in Java",
     "blogs/authors.yml",
     "blogs",
@@ -208,7 +209,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20230930170026.png",
     "Notes with keywords.canvas",
     "Software Architecture & Technology of Large-Scale Systems/Performance/assets",
-    "Software Architecture & Technology of Large-Scale Systems/Performance",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001164700.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001163826.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160815.png",

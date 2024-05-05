@@ -1,0 +1,354 @@
+---
+sidebar_position: "4"
+tags:
+  - Java
+slug: /thinking-in-java/Initialization-n-cleanup-class-member-initialization
+---
+
+## 成員初始化
+
+- Java 盡可能保證所有個 variable 都能得到適當的 initialization，對於 method 的 local variables，Java 透過編譯錯誤來保證這一點：
+
+```java
+void f() {
+  int i;
+  i++; // Error -- i not initialized
+}
+```
+
+> 雖然編譯器也可以為 `i` 賦予一個預設值，但未初始化的 variable 更可能是疏失，因此強制提供初始值可以幫助找出程式的缺陷
+- 當 variable 作為 class 的 field 時，情況又有所不同，class 的每個 primitive field 都保證會有一個初始值
+```java
+public class InitialValues {
+  boolean t;
+  char c;
+  byte b;
+  short s;
+  int i;
+  long l;
+  float f;
+  double d;
+  InitialValues reference;
+  void printInitialValues() {
+    System.out.println("Data type      Initial value");
+    System.out.println("boolean        " + t);
+    System.out.println("char           [" + c + "]");
+    System.out.println("byte           " + b);
+    System.out.println("short          " + s);
+    System.out.println("int            " + i);
+    System.out.println("long           " + l);
+    System.out.println("float          " + f);
+    System.out.println("double         " + d);
+    System.out.println("reference      " + reference);
+  }
+  public static void main(String[] args) {
+    InitialValues iv = new InitialValues();
+    iv.printInitialValues();
+    /* You could also say:
+    new InitialValues().printInitialValues();
+    */
+  }
+} /* Output:
+Data type      Initial value
+boolean        false
+char           [ ]
+byte           0
+short          0
+int            0
+long           0
+float          0.0
+double         0.0
+reference      null
+*/
+```
+
+> class 內定義 object 的 reference 時，如果沒有初始化，就會得到特殊值 `null`
+
+### 指定初始化
+- 若要為某個 variable 賦初值，可以在定義成員變數時直接賦值：
+```java
+public class InitialValues2 {
+  boolean bool = true;
+  char ch = 'x';
+  byte b = 47;
+  short s = 0xff;
+  int i = 999;
+  long lng = 1;
+  float f = 3.14f;
+  double d = 3.14159;
+} 
+```
+
+- 也能用同樣的方法初始化非 primitive 的 object
+```java
+class Depth {}
+
+public class Measurement {
+  Depth d = new Depth();
+  // ...
+}
+```
+
+> 若沒有為 `d` 賦初值而試圖使用它，會得到 `null`，如果進行任何實際操作如 `d.someMethod()`，則會拋出 `NullPointerException`
+
+
+- 可以通過調用方法來提供初始值。方法可以帶參數，但引用的變數必須已經被初始化，正確性依賴於初始化順序而非編譯方式。編譯器會適當地給出**向前引用**的警告：
+```java
+public class MethodInit {
+  int i = f();
+  int f() { return 11; }
+}
+
+public class MethodInit2 {
+  int i = f();
+  int j = g(i);
+  int f() { return 11; }
+  int g(int n) { return n * 10; }
+}
+
+public class MethodInit3 {
+  //! int j = g(i); // Illegal forward reference
+  int i = f();
+  int f() { return 11; }
+  int g(int n) { return n * 10; }
+}
+```
+
+
+## constructor 初始化
+
+- 在Java中，constructor 函數是初始化 class instance 的主要方式之一。通過 constructor，開發者可以在 object 創建時執行初始化邏輯
+- 即便不在 constructor 中明確進行初始化，Java保證所有 class field 在使用前都會自動被初始化到預設值，如整型（`int`）字段自動為0，object 引用自動為`null`
+
+```java
+public class Counter {
+  int i;
+  Counter() { i = 7; }
+  // ...
+}
+```
+- 使用 constructor 進行初始化的優勢在於可以根據創建 object 時的具體情況動態地設定字段的值。例如，可以根據傳入的參數或當前的環境設定來調整初始化值
+### 初始化順序
+- 在Java中，class 的內部變數定義的先後順序決定了初始化的順序，這些初始化會在 constructor 被調用之前完成，即使這些變數的定義散佈在不同的方法之間
+```java
+// When the constructor is called to create a
+// Window object, you'll see a message:
+class Window {
+  Window(int marker) { System.out.println("Window(" + marker + ")"); }
+}
+
+class House {
+  Window w1 = new Window(1); // Before constructor
+  House() {
+    // Show that we're in the constructor:
+    print("House()");
+    w3 = new Window(33); // Reinitialize w3
+  }
+  Window w2 = new Window(2); // After constructor
+  void f() { print("f()"); }
+  Window w3 = new Window(3); // At end
+}
+
+public class OrderOfInitialization {
+  public static void main(String[] args) {
+    House h = new House();
+    h.f(); // Shows that construction is done
+  }
+} /* Output:
+Window(1)
+Window(2)
+Window(3)
+House()
+Window(33)
+f()
+*/
+```
+- 由輸出可以看出，`w3`這個引用在構造函數中被初始化兩次，這展示了 class 成員變數初始化與 constructor 執行的順序互動
+## 靜態數據的初始化
+
+- 靜態數據（使用 `static` 關鍵字定義的 field）無論建立多少個對象，都只佔用一份記憶體
+- **static** 關鍵字不能用於 local variable，只能在 class 的 field 作用
+- 如果 static field 未顯式初始化：
+    - 原始類型的靜態字段將獲得預設的初始值（例如 `int` 為 0，`boolean` 為 `false`）
+    - 對象引用類型的靜態字段將預設為 `null`
+- 在定義處初始化，跟非靜態數據方法一樣
+
+```java
+class Bowl {
+  Bowl(int marker) {
+    print("Bowl(" + marker + ")");
+  }
+  void f1(int marker) {
+    print("f1(" + marker + ")");
+  }
+}
+
+class Table {
+  static Bowl bowl1 = new Bowl(1);
+  Table() {
+    System.out.println("Table()");
+    bowl2.f1(1);
+  }
+  void f2(int marker) {
+    System.out.println("f2(" + marker + ")");
+  }
+  static Bowl bowl2 = new Bowl(2);
+}
+
+class Cupboard {
+  Bowl bowl3 = new Bowl(3);
+  static Bowl bowl4 = new Bowl(4);
+  Cupboard() {
+    System.out.println("Cupboard()");
+    bowl4.f1(2);
+  }
+  void f3(int marker) {
+    System.out.println("f3(" + marker + ")");
+  }
+  static Bowl bowl5 = new Bowl(5);
+}
+
+public class StaticInitialization {
+  public static void main(String[] args) {
+    System.out.println("Creating new Cupboard() in main");
+    new Cupboard();
+    System.out.println("Creating new Cupboard() in main");
+    new Cupboard();
+    table.f2(1);
+    cupboard.f3(1);
+  }
+  static Table table = new Table();
+  static Cupboard cupboard = new Cupboard();
+} /* Output:
+Bowl(1)
+Bowl(2)
+Table()
+f1(1)
+Bowl(4)
+Bowl(5)
+Bowl(3)
+Cupboard()
+f1(2)
+Creating new Cupboard() in main
+Bowl(3)
+Cupboard()
+f1(2)
+Creating new Cupboard() in main
+Bowl(3)
+Cupboard()
+f1(2)
+f2(1)
+f3(1)
+*/
+```
+
+- 在上面的程式碼中，靜態 field `bowl1` 和 `bowl2` 在 `Table` class首次被加載時就已經初始化，這證明了靜態初始化只在 class 首次加載時執行一次
+- 如果不先建立 `Table` object，也不引用 `Table.b1` 或 `Table.b2`，那麼靜態的 `Bowl b1` 和 `b2` 永遠都不會被建立
+- 靜態數據的初始化順序先於任何 object 創建或非靜態數據的初始化
+- 假設有個 class `Dog`
+    1. 即使沒有顯式的使用 `static`，constructor 實際上也是 static method。因此當首次建立類型為 `Dog`的 object 時，或是 `Dog` 的 static method / field ，首次被訪問時，Java解釋器必須查找 class 路徑以定位 `Dog.class` 文件
+    2. 載入 `Dog.class`，有關靜態初始化的動作都會執行，因此靜態初始化只在 **Class** 首次載入時進行一次
+    3. 當用 `new Dog()`創建 object 的時候，首先會在 heap 上為 `Dog` 分配足夠的記憶體
+    4. 這塊空間會被清零，這就自動將 `Dog` 中所有 primitives 的數據都設成預設值
+    5. 執行所有 field 定義的初始化動作
+    6. 執行 constructor
+#### 顯式的靜態初始化
+
+- Java 允許使用特殊的 **static clause**（也稱為 **static block**）來組織多個靜態初始化動作：
+```java
+public class Spoon {
+  static int i;
+  static {
+    i = 47;
+  }
+}
+```
+- 雖然看起來像 method，實際上它只是一段緊隨 static 關鍵字後面的代碼
+- 與其他靜態初始化相同，這段代碼只在以下時刻執行一次：
+    - 首次生成這個 class 的 object 時
+    - 首次訪問那個 class 的 static 成員
+```java
+class Cup {
+  Cup(int marker) {
+    System.out.println("Cup(" + marker + ")");
+  }
+  void f(int marker) {
+    System.out.println("f(" + marker + ")");
+  }
+}
+
+class Cups {
+  static Cup cup1;
+  static Cup cup2;
+  static {
+    cup1 = new Cup(1);
+    cup2 = new Cup(2);
+  }
+  Cups() {
+    System.out.println("Cups()");
+  }
+}
+
+public class ExplicitStatic {
+  public static void main(String[] args) {
+    System.out.println("Inside main()");
+    Cups.cup1.f(99);  // (1)
+  }
+  // static Cups cups1 = new Cups();  // (2)
+  // static Cups cups2 = new Cups();  // (2)
+} /* Output:
+Inside main()
+Cup(1)
+Cup(2)
+f(99)
+*/
+```
+- 在上面的 example 中，`Cup(1)` 和 `Cup(2)` 的創建只發生在 `Cups` class 的靜態塊執行時，證明靜態塊只在 class 首次加載時被執行一次
+#### 非靜態實例初始化(Non-static instance initialization)
+- Java 也提供了一種類似於靜態初始化塊的語法來初始化非靜態變數，這種初始化塊在每個構造函數調用前執行：
+```java
+class Mug {
+  Mug(int marker) {
+    System.out.println("Mug(" + marker + ")");
+  }
+  void f(int marker) {
+    System.out.println("f(" + marker + ")");
+  }
+}
+
+public class Mugs {
+  Mug mug1;
+  Mug mug2;
+  {
+    mug1 = new Mug(1);
+    mug2 = new Mug(2);
+    print("mug1 & mug2 initialized");
+  }
+  Mugs() {
+    System.out.println("Mugs()");
+  }
+  Mugs(int i) {
+    System.out.println("Mugs(int)");
+  }
+  public static void main(String[] args) {
+    System.out.println("Inside main()");
+    new Mugs();
+    System.out.println("new Mugs() completed");
+    new Mugs(1);
+    System.out.println("new Mugs(1) completed");
+  }
+} /* Output:
+Inside main()
+Mug(1)
+Mug(2)
+mug1 & mug2 initialized
+Mugs()
+new Mugs() completed
+Mug(1)
+Mug(2)
+mug1 & mug2 initialized
+Mugs(int)
+new Mugs(1) completed
+*/
+```
+- 這種語法特別重要於 **匿名內部類(anonymous inner classes)** 的初始化，它保證了無論構造函數的具體形式如何，某些初始化動作都會被執行。這對於設計需要在多個構造函數中共用初始化邏輯的類來說非常有用

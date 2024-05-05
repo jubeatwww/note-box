@@ -1,0 +1,75 @@
+---
+tags:
+  - Java
+slug: /thinking-in-java/Initialization-n-cleanup-enumerated-types
+sidebar_position: "7"
+---
+Java SE5 引入了 `enum` 關鍵字，這是對 Java 語言的一項重大擴展，使得定義常量更加安全和方便。在此之前，常量通常是以整數或字符串常量的形式定義的，這不能保證只使用限定的值，存在使用錯誤的風險
+
+## 基本枚舉的定義
+```java
+public enum Spiciness {
+  NOT, MILD, MEDIUM, HOT, FLAMING
+}
+```
+- 這段代碼定義了一個名為 `Spiciness` 的枚舉，包含五個不同的辣度等級
+- 每個枚舉實例都對應一個固定的整數索引，稱為序數（ordinal），從 0 開始
+### 枚舉在運行時的行為
+- 為了使用 enum，需要建立該類型的 reference，並且賦值給某個 instance
+```java
+public class EnumOrder {
+  public static void main(String[] args) {
+    for(Spiciness s : Spiciness.values())
+      System.out.println(s + ", ordinal " + s.ordinal());
+  }
+} /* Output:
+NOT, ordinal 0
+MILD, ordinal 1
+MEDIUM, ordinal 2
+HOT, ordinal 3
+FLAMING, ordinal 4
+*/
+```
+- `values()` 方法自動由編譯器生成，返回一個包含所有枚舉實例的數組
+- `ordinal()` 方法返回每個枚舉實例的序數
+
+## 枚舉的進階特性
+
+- 雖然 `enum` 看起來可能是一個全新的數據類型，但實際上它在背後是由編譯器生成的特殊類型的 class。這意味著枚舉可以擁有方法和屬性，並且可以被當作其他任何類別來處理
+	- 事實上 **enum** 確實是 class，並且有自己的 method
+
+## 在 switch 語句中使用枚舉
+枚舉尤其適用於 switch 語句，因為它們可以清晰地限制可能的選項，這使得代碼更加安全和易於維護：
+```java
+public class Burrito {
+  Spiciness degree;
+  public Burrito(Spiciness degree) { this.degree = degree;}
+  public void describe() {
+    System.out.print("This burrito is ");
+    switch(degree) {
+      case NOT:    System.out.println("not spicy at all.");
+                   break;
+      case MILD:
+      case MEDIUM: System.out.println("a little hot.");
+                   break;
+      case HOT:
+      case FLAMING:
+      default:     System.out.println("maybe too hot.");
+    }
+  }	
+  public static void main(String[] args) {
+    Burrito
+      plain = new Burrito(Spiciness.NOT),
+      greenChile = new Burrito(Spiciness.MEDIUM),
+      jalapeno = new Burrito(Spiciness.HOT);
+    plain.describe();
+    greenChile.describe();
+    jalapeno.describe();
+  }
+} /* Output:
+This burrito is not spicy at all.
+This burrito is a little hot.
+This burrito is maybe too hot.
+*/
+```
+- 使用枚舉在 `switch` 語句中能夠更精確地控制流程，並確保所有情況都被覆蓋，減少錯誤

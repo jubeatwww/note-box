@@ -1,0 +1,145 @@
+---
+tags:
+  - Java
+sidebar_position: "5"
+slug: /thinking-in-java/Initialization-n-cleanup-array-initialization
+---
+## 陣列宣告與初始化
+
+- 陣列在 Java 中是一系列相同類型的數據集合，可以存儲 primitive 或 object reference
+- 定義一個陣列，只要在類型名稱後面加上方括號 `[]`
+```java
+int[] a1;
+```
+- 也可以放在 identifier 後面，兩種含意是一樣的
+```java
+int a1[];
+```
+
+- 編譯器不允許指定 array 大小，宣告後拿到的只是對 array 的 reference，但沒有給 array object 本身分配任何空間
+	- 例如 `int a1[5];` 這樣的宣告是不合法的
+- 若要創建陣列並分配記憶體空間，需要使用初始化表達式。初始化可以在宣告後的任何地方進行，只要在變數使用前完成即可
+- 也可以使用一種特殊的初始化，必須使用在創建 array 的地方，用大括號組成，儲存空間的分配 (等同使用 **new**)將由編譯器負責
+	- 這種初始化方式是 Java 的一種「匿名陣列」初始化，並且這種方式初始化後，陣列的長度和元素都將固定
+```java
+int[] a1 = {1, 2, 3, 4, 5};
+```
+### 陣列的引用和修改
+- 在沒有 array 的時候定義 array reference，是由於在 Java 中可以將一個 array assign 給另外一個 array，實際只是複製一個 reference
+```java
+int[] a2;
+a2 = a1;
+```
+
+```java
+public class ArraysOfPrimitives {
+  public static void main(String[] args) {
+    int[] a1 = { 1, 2, 3, 4, 5 };
+    int[] a2;
+    a2 = a1;
+    for(int i = 0; i < a2.length; i++)
+      a2[i] = a2[i] + 1;
+    for(int i = 0; i < a1.length; i++)
+      System.out.println("a1[" + i + "] = " + a1[i]);
+  }
+} /* Output:
+a1[0] = 2
+a1[1] = 3
+a1[2] = 4
+a1[3] = 5
+a1[4] = 6
+*/
+```
+:::info
+- 所有 array 都有一個固有成員 **length**，可以透過它知道 array 內包含多少元素，但不能對其修改
+    - 從元素0開始，因此能使用的最大下標是 **length** - 1
+    - 一旦超過，就會出現運行時錯誤
+:::
+## 陣列的動態創建和自動初始化
+- 若編寫代碼時不確定需要多少元素，可使用 `new` 指令動態創建陣列
+	- 基本數據類型的陣列會自動初始化為預設值（如 `int` 為 `0`）
+	- object 類型的陣列則初始化為 `null`
+```java
+public class ArrayNew {
+  public static void main(String[] args) {
+    int[] a;
+    Random rand = new Random(47);
+    a = new int[rand.nextInt(20)];
+    System.out.println("length of a = " + a.length);
+    System.out.println(Arrays.toString(a));
+  }
+} /* Output:
+length of a = 18
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+*/
+```
+- array 大小通過 `Random.nextInt()` 隨機決定
+- primitive 類型會自動初始化成空值 (`0`、`false`)
+- 也可以在定義的同時初始化: `int[] a = new int[rand.nextInt(20)];`
+- 如果建立了一個非 primitive 的 array，那就是建立了一個 reference 的 array
+	- 未初始化的 `Integer` 陣列元素預設為 `null`，如果直接使用可能會導致 `NullPointerException`
+## 包裝器類型陣列的使用
+```java
+public class ArrayClassObj {
+  public static void main(String[] args) {
+    Random rand = new Random(47);
+    Integer[] a = new Integer[rand.nextInt(20)];
+    System.out.println("length of a = " + a.length);
+    for(int i = 0; i < a.length; i++)
+      a[i] = rand.nextInt(500); // Autoboxing
+    System.out.println(Arrays.toString(a));
+  }
+} /* Output: (Sample)
+length of a = 18
+[55, 193, 361, 461, 429, 368, 200, 22, 207, 288, 128, 51, 89, 309, 278, 498, 361, 20]
+*/
+```
+- 這邊用的是包裝器 `Integer`，是 class 而非 primitive
+- 這邊即使使用 `new` 建立 array 之後，它還只是一個 reference array，直到透過建立新的 `Integer` object 初始化才算結束
+- 如果忘了建立 object 而試著使用 array 中的空 reference，就會產生runtime error
+
+## 初始化 Object 類型的陣列
+- 在定義處的地方初始化可以使用其他型式
+- 對於 Object 類型的陣列，可以在定義時使用大括號 `{}` 進行初始化。這包括直接使用 `new Integer()` 來創建對象，或利用自動裝箱（autoboxing）直接將基本類型賦值給包裝類型
+```java
+public class ArrayInit {
+  public static void main(String[] args) {
+    Integer[] a = {
+      new Integer(1),
+      new Integer(2),
+      3, // Autoboxing
+    };
+    Integer[] b = new Integer[]{
+      new Integer(1),
+      new Integer(2),
+      3, // Autoboxing
+    };
+    System.out.println(Arrays.toString(a));
+    System.out.println(Arrays.toString(b));
+  }
+} /* Output:
+[1, 2, 3]
+[1, 2, 3]
+*/
+```
+- 列表最後一個逗號是可選的
+
+## 使用陣列傳遞參數給方法
+
+- 陣列可以用作方法的參數，從而允許在不同方法間傳遞多個數據。這是一種在方法調用時動態創建並初始化陣列的方式，特別是當使用字串陣列作為參數傳遞給其他方法時
+```java
+public class DynamicArray {
+  public static void main(String[] args) {
+    Other.main(new String[]{ "fiddle", "de", "dum" });
+  }
+}
+
+class Other {
+  public static void main(String[] args) {
+    for(String s : args)
+      System.out.print(s + " ");
+  }
+} /* Output:
+fiddle de dum
+*/
+```

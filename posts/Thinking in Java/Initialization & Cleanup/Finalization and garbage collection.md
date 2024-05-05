@@ -1,0 +1,105 @@
+---
+tags:
+  - Java
+sidebar_position: "3"
+slug: /thinking-in-java/Initialization-n-cleanup-finalization-and-garbage-collection
+---
+
+- 程式設計師需意識到清理資源的重要性，尤其是使用了非標準記憶體分配（如通過JNI分配的本地記憶體）的物件來說，簡單的放手可能並不安全。對於基本資料類型如整數，通常不需要清理。
+- Java 有垃圾收集機制來回收不再使用的 object 記憶體，但若 object 分配了「特殊」記憶體，則垃圾收集器可能無法處理
+- Java 的 `finalize()` 方法允許在物件記憶體回收前執行清理，但與 C++ 的 destructor 函數不同，`finalize()`並不保證一定會被執行，因其執行依賴於垃圾收集的觸發
+- 若物件操作涉及需要結束前進行的特定清理工作，應該手動實現，不能依賴自動垃圾收集，因為：
+    - object 可能不會被垃圾回收
+    - 垃圾回收並不等於 _destructor_
+- 例如: 在螢幕繪製的應用中，透過 C++ 的 destructor 可以在物件銷毀時確保進行必要的資源回收，而在 Java 中，如果記憶體一直充足，該物件可能在程式結束前永遠不會被回收
+## finalize 的用途為何
+
+- 這邊要記住的重點: **垃圾回收只與 Java 虛擬機管理的 heap 記憶體有關**
+- 無論 object 如何被建立，都由垃圾回收器來負責釋放該 object 的記憶體
+- **`finalize()`** 的用途限於特殊情況: 用於那些以非標準方式分配記憶體的情況，尤其是涉及非 Java 代碼的情況
+    - 在非 Java 代碼中有可能調用 C 語言的 `malloc()` 來分配記憶體。這種情況下，除非適當地調用 `free()`，否則記憶體將無法被釋放，造成 memory leak
+    - 然而，由於 `free()` 是 C/C++ 的函數，需要在 `finalize()` 中通過 JNI 來調用，以確保這部分非標準記憶體得以正確釋放
+
+## 必須由你實作清理
+
+- 在 Java 中，所有物件的清理需要使用者在需要時**顯式**調用清理方法。這與 C++ 中的 destructor 函數概念有所衝突，後者會在物件離開創建它的作用域時自動觸發銷毀
+- 在 C++ 中，位於 stack 上的本地物件會在作用域結束時自動銷毀。相比之下，Java 中沒有 local object 的概念；所有物件都在 heap 上通過 **`new`** 關鍵字創建
+    - 在 C++ 中，如果忘記調用 **`delete`**，相應的 destructor 函數也不會執行，導致記憶體洩漏
+    - 相對地，在 Java 中，物件的釋放完全依賴於垃圾收集器的介入
+- 雖然 Java 擁有垃圾收集機制，但這不意味著不需要進行類似於 C++ destructor 函數的清理工作。若需進行除記憶體釋放以外的清理，則必須在 Java 中明確調用適當的清理方法，雖然這缺乏 C++ 中自動銷毀的便利性
+- 垃圾收集和 **`finalize()`** 方法的執行都沒有保證：
+    - 如果 Java 虛擬機 (JVM) 沒有遇到記憶體壓力，則可能不會觸發垃圾回收，從而不回收記憶體
+    - 對於需要特定清理的操作，不應僅依賴這些自動化機制
+
+## 終結條件 (The termination condition)
+
+- `finalize()`有個有趣的用法: 對 object 終結條件(termination condition) 的驗證
+    - 當你不再需要一個物件時，該物件應該處於一個可以安全釋放其記憶體的狀態。例如，如果一個物件代表一個開啟的檔案，則該檔案應在物件被垃圾回收前被關閉
+- 如果物件的某些部分未被適當清理，這可能表明你的程式中存在錯誤。即使 `finalize()` 不保證總是被執行，它仍可以用來揭露這種錯誤
+
+```java
+class Book {
+  boolean checkedOut = false;
+  Book(boolean checkOut) {
+    checkedOut = checkOut;
+  }
+  void checkIn() {
+    checkedOut = false;
+  }
+  protected void finalize() {
+    if(checkedOut)
+      System.out.println("Error: checked out");
+    // Normally, you'll also do this:
+    // super.finalize(); // Call the base-class version
+  }
+}
+
+public class TerminationCondition {
+  public static void main(String[] args) {
+    Book novel = new Book(true);
+    // Proper cleanup:
+    novel.checkIn();
+    // Drop the reference, forget to clean up:
+    new Book(true);
+    // Force garbage collection & finalization:
+    System.gc();
+  }
+} /* Output:
+Error: checked out
+*/
+```
+
+- 所有的 `Book` object 在被當成垃圾回收前都應該被 **check in**，但這個例子中有一本書未被 **check in**，如果沒有 `finalize()` 來驗證，這個缺陷可能難以發現
+:::note
+- **`System.gc()`** 是 Java 的一個方法，用來建議虛擬機（JVM）執行垃圾收集（GC）。重要的是要明白，**`System.gc()`** 並不保證垃圾收集器會立即執行，它僅是向 JVM 提出請求，希望能夠進行垃圾收集
+- 即便不使用 **`System.gc()`**，如果程序多次執行並分配大量記憶體，導致垃圾回收，最終錯誤的 `Book` 物件也會被發現。這是因為垃圾收集器的設計旨在回收不再使用的記憶體，從而提高記憶體使用效率
+:::
+## 垃圾回收器如何工作
+- 在 Java 中，所有 object（除了 primitives）都在 heap 上分配，這可能看起來是一個昂貴的操作。但是，由於垃圾收集器的存在，實際上這種分配方式可以非常快速
+- 某些 JVM 實現了類似“傳送帶”的 heap 模型，每次新對象分配時，只需將 heap 指針簡單地向前移動到未使用的區域，這使得對象存儲分配迅速得多
+- 一種簡單但較慢的垃圾收集技術是**引用計數(reference counting)**，其中每個對象包含一個引用計數器，引用連接或解除時計數器變化。然而，由於循環引用問題，這種方法並未在 JVM 中使用
+- 較快的垃圾收集方法，不使用引用計數，而是基於核心假設：所有未死亡的 object 都必須最終能夠從 stack 或靜態存儲中的 reference 追踪到
+    - 收集過程從 stack 和靜態存儲區域的引用作為活躍對象的 root 開始
+    - 垃圾收集器遍歷所有引用鏈，對於每一個找到的引用，進行遞迴追蹤，以確保遍歷到的每個 object 都是活躍的
+    - 在追踪過程中，可以找出哪些 object 是活躍的（被引用的），哪些是垃圾（未被引用的）
+    - 不會因循環引用而失效
+- Java 虛擬機 (JVM) 採用適應性（adaptive）垃圾收集機制，在這種方式下，垃圾收集策略會根據運行條件自動調整：
+    - **Stop-and-Copy:**
+        - 此策略在執行時會暫停程序，將所有活躍的對象從一個 heap 轉移到另一個新的 heap 中。這種方法雖然能提高存儲效率，但可能在記憶體使用上較為低效，尤其是對於生成較少垃圾的程序來說，因為它需要維護兩個堆並在它們之間不斷移動記憶體
+    - **Mark-and-Sweep:**
+        - 此法透過標記所有活躍對象，然後清掃掉未被標記的對象（即垃圾），來釋放記憶體。這種方法不涉及對象的物理移動，因此更適合垃圾較少的情況。當程序生成的垃圾較少時，此法比 **Stop-and-Copy** 方法更高效，因為它避免了不必要的記憶體移動
+    - JVM 會根據垃圾生成的情況和 heap 的碎片化程度在這兩種方法之間切換，以優化記憶體管理和程序性能。這種適應性策略使得 JVM 能在不同條件下選擇最適合的垃圾收集方法
+        - **塊分配**：
+	        - JVM 在記憶體中分配大塊（blocks），用於存放大型對象。這種方法不僅幫助管理記憶體更有效，也使得活躍對象能在垃圾收集時從一個堆複製到已死亡的塊中，進一步減少了記憶體碎片
+        - **generation count**：
+	        - 每個記憶體塊都有一個代計數，用以追蹤該塊是否仍在使用中。通常，只有自上次垃圾收集後新創建的塊會被壓縮，而其他塊則在被引用時更新其代計數
+    - **垃圾收集策略的適應性切換**：
+        - JVM 定期進行全面掃描，大型對象不會被複製，只更新其代計數；而包含小對象的塊則被複製和壓縮
+        - JVM 監控垃圾收集的效率，如果因為 object 壽命長導致收集成本過高，則切換到標記-清掃（mark-and-sweep）方法
+        - 如果使用標記-清掃方法後 heap 開始碎片化，則再次切換回停止-複製（stop-and-copy）方法
+- Just-In-Time (JIT) 編譯器
+    - Just-In-Time (JIT) 編譯器是一種強大的技術，它將 Java 程序的部分或全部轉換成本機機器碼，進而不需要在 JVM 中完全依賴於解釋執行，從而顯著提高程序的運行速度
+	    - 當 JVM 加載一個 class 時，如需創建該 class 的 object，相應的 **.class** 文件被定位並加載到記憶體中。這時，可以選擇對該 class 的代碼進行 JIT 編譯，優先編譯最頻繁執行的代碼段，以提高執行效率
+    - 缺陷
+        - 全面 JIT 編譯雖然能提高運行時的效率，但會增加程序的啟動時間並擴大可執行文件的大小，這可能引起分頁（paging），進而減慢程序速度
+        - **替代策略**：採用延遲評估（lazy evaluation）。即只在碼段首次執行時進行 JIT 編譯，從而避免了從未執行的代碼被無謂地編譯。這種策略有助於減少啟動延遲，並降低不必要的資源消耗

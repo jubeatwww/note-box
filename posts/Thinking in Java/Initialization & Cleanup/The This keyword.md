@@ -1,0 +1,151 @@
+---
+tags:
+  - Java
+sidebar_position: "2"
+slug: /thinking-in-java/Initialization-n-cleanup-the-this-keyword
+---
+## this 關鍵字
+
+#### 示例：多個相同類型的物件調用方法
+
+- 如果有兩個同類型的 object **a**、**b**
+```java
+public class BananaPeel {
+  public static void main(String[] args) {
+    Banana a = new Banana(),
+           b = new Banana();
+    a.peel(1);
+    b.peel(2);
+  }
+}
+```
+> 該如何知道 **peel()** 被 **a** 還是 **b** 調用
+- 
+- 為了能簡便的、OOP 的方法來寫 —即發送訊息給 object，編譯器做了一些幕後工作:
+    - 把 “所操作 object 的 reference“，作為第一個參數傳給 **peel()**
+
+```java
+Banana.peel(a, 1);
+Banana.peel(b, 2);
+```
+
+:::warn
+實際上不能這樣寫
+:::
+- 由於這個 reference 是由 compiler “偷偷” 加上的，因此不會有可用的標示。為此有個專門的關鍵字 **this**
+	- `this` 關鍵字在方法內部用來代表當前 object 的 reference
+    - `this` 只能在方法內使用，與其他 object 的 reference 沒有不同
+    - 在方法內調用另一個 object 的方法就不用使用 `this`
+
+#### 示例：方法內調用其他方法
+```java
+public class Apricot {
+  void pick() { /* ... */ }
+  void pit() { pick(); /* ... */ }
+}
+```
+
+- `pit()` 內可以寫 `this.pick()`，但沒必要，編譯器會自動添加
+- 只有需要明確指出當前 object 時才需要 this
+    - 例如需要回傳當前的 reference 時
+```java
+public class Leaf {
+  int i = 0;
+  Leaf increment() {
+    i++;
+    return this;
+  }
+  void print() {
+    System.out.println("i = " + i);
+  }
+  public static void main(String[] args) {
+    Leaf x = new Leaf();
+    x.increment().increment().increment().print();
+  }
+} /* Output:
+i = 3
+*/
+```
+
+#### 示例：將當前物件傳遞給其他方法
+- 將當前 object 傳給其他方法的時候也很有用
+```java
+class Person {
+  public void eat(Apple apple) {
+    Apple peeled = apple.getPeeled();
+    System.out.println("Yummy");
+  }
+}
+
+class Peeler {
+  static Apple peel(Apple apple) {
+    // ... remove peel
+    return apple; // Peeled
+  }
+}
+
+class Apple {
+  Apple getPeeled() { return Peeler.peel(this); }
+}
+
+public class PassingThis {
+  public static void main(String[] args) {
+    new Person().eat(new Apple());
+  }
+} /* Output:
+Yummy
+*/
+```
+
+### 在 constructor 中調用 constructor
+
+- 在 constructor 中幫 **this** 添加參數列表，就有了不同的含意: 會產生對符合這個參數列表的某個 constructor 的明確調用
+```java
+public class Flower {
+  int petalCount = 0;
+  String s = "initial value";
+  Flower(int petals) {
+    petalCount = petals;
+    print("Constructor w/ int arg only, petalCount= "
+      + petalCount);
+  }
+  Flower(String ss) {
+    print("Constructor w/ String arg only, s = " + ss);
+    s = ss;
+  }
+  Flower(String s, int petals) {
+    this(petals);
+	//!    this(s); // Can't call two!
+    this.s = s; // Another use of "this"
+    print("String & int args");
+  }
+  Flower() {
+    this("hi", 47);
+    print("default constructor (no args)");
+  }
+  void printPetalCount() {
+	//! this(11); // Not inside non-constructor!
+    print("petalCount = " + petalCount + " s = "+ s);
+  }
+  public static void main(String[] args) {
+    Flower x = new Flower();
+    x.printPetalCount();
+  }
+} /* Output:
+Constructor w/ int arg only, petalCount= 47
+String & int args
+default constructor (no args)
+petalCount = 47 s = hi
+*/
+```
+
+- 可以用 **this** 調用 constructor，但不能調用兩個
+- 必須將 constructor 的調用放在起始位置，否則編譯器會報錯
+- **printPetalCount()** 表明 constructor 外調用也會報錯
+
+### static 的涵義
+
+- static method 就是沒有 **this** 的 method，只能訪問其他 static 方法和 static 屬性
+- static 方法可在沒有任何物件實例的情況下，通過 class 本身調用
+- Java 禁止使用 global method，但在class中置入 **static** 方法就可以訪問其他 **static** method 及 **static** field
+
