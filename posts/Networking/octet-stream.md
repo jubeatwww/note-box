@@ -14,7 +14,9 @@ keywords:
 ---
 
 > [application/octet-stream](https://mimetype.io/application/octet-stream) @ mimetype.io
+
 > [学习笔记：application/octet-stream](https://www.cnblogs.com/RioTian/p/17592907.html) @ Koshkaaa
+
 > [Do I need Content-Type: application/octet-stream for file download?](https://stackoverflow.com/questions/20508788/do-i-need-content-type-application-octet-stream-for-file-download) @ stackoverflow
 ---
 在上傳檔案到 `S3` 等儲存空間時，若沒有指定 MIME type，就會被預設被設置為 `application/octet-stream`
