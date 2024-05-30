@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d6096412f8e933ec",
+        "id": "b5f6be91d954a810",
         "type": "tabs",
         "children": [
           {
-            "id": "8c8bbf7f5c7fb975",
+            "id": "e0daddd0e8a63714",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Networking/octet-stream.md",
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "info",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Networking/octet-stream.md",
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Networking/octet-stream.md",
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Networking/octet-stream.md"
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -164,25 +164,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8c8bbf7f5c7fb975",
+  "active": "e0daddd0e8a63714",
   "lastOpenFiles": [
-    "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
-    "posts/Networking/octet-stream.md",
+    "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
+    "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
+    "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Inheritance.md",
+    "posts/Thinking in Java/Ch7. Reusing Classes/7.1 Classes Reusing Technique.md",
+    "Linux kernel/你所不知道的C語言/函式呼叫/assets/inherit.png",
+    "posts/Thinking in Java/Ch7. Reusing Classes/assets/inherit.png",
+    "posts/Thinking in Java/Ch7. Reusing Classes/assets",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.6 Variable Argument Lists.md",
+    "posts/Thinking in Java/Ch6. Access Control/6.2 Access Control and Class Design.md",
+    "posts/Thinking in Java/Ch6. Access Control/6.1 Package and Access Specifiers.md",
+    "posts/Thinking in Java/Ch7. Reusing Classes",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.1 Constructing Objects.md",
+    "posts/Thinking in Java/Ch6. Access Control",
+    "posts/Networking/octet-stream.md",
+    "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
     "posts/Networking",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.6 Variable Argument Lists.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.5 Array initialization.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.4 Class Member Initialization.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.3 Finalization and garbage collection.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.1 Constructing Objects.md",
     "posts/Thinking in Java/Ch2. Everything is an Object/2.3 First Java Program.md",
     "posts/Thinking in Java/Ch2. Everything is an Object/2.2 Class.md",
     "posts/Thinking in Java/Ch3. Operators/3.4 Logical Specialized Uses and Conversions.md",
     "posts/Thinking in Java/Ch3. Operators/3.3 Logical, Bitwise, and Shift.md",
     "posts/Thinking in Java/Ch3. Operators/3.2 Arithmetic and Relations.md",
     "posts/Thinking in Java/Ch3. Operators/3.1 Fundamentals.md",
-    "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
     "posts/Thinking in Java/Ch4. Controlling Execution/4.2 Advanced Control Structures.md",
     "posts/Thinking in Java/Ch4. Controlling Execution",
     "posts/Thinking in Java/Ch3. Operators",
@@ -192,16 +202,8 @@
     "leetcode/128. Longest Consecutive Sequence.md",
     "leetcode/68. Text Justification.md",
     "leetcode/86. Partition List.md",
-    "leetcode/1448. Count Good Nodes in Binary Tree.md",
-    "posts/README.md",
-    "leetcode/662. Maximum Width of Binary Tree.md",
-    "leetcode/958. Check Completeness of a Binary Tree.md",
-    "leetcode/1376. Time Needed to Inform All Employees.md",
     "posts/Thinking in Java",
     "blogs/authors.yml",
-    "blogs",
-    "posts/Cloud",
-    "posts/Linux",
     "leetcode/assets/441. Arranging Coins-assets.png",
     "Linux kernel/你所不知道的C語言/指標/Pointer.canvas",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231010174522.png",
@@ -212,8 +214,6 @@
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001164700.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001163826.png",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160815.png",
-    "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160747.png",
-    "Linux kernel/你所不知道的C語言/函式呼叫/assets/Pasted image 20231001160132.png",
     "Linux kernel/Untitled.canvas",
     "Untitled.canvas",
     "產業研究/PCB.canvas",
