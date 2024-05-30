@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Inheritance.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Inheritance.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Inheritance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md"
+                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Inheritance.md"
               }
             }
           },
@@ -147,7 +147,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -166,8 +166,8 @@
   },
   "active": "e0daddd0e8a63714",
   "lastOpenFiles": [
-    "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Final and Inherited Class Initialization.md",
+    "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Inheritance.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.1 Classes Reusing Technique.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/inherit.png",
