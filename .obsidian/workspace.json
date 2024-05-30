@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+                "file": "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+                "file": "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+                "file": "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md"
+                "file": "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md"
               }
             }
           },
@@ -166,11 +166,11 @@
   },
   "active": "e0daddd0e8a63714",
   "lastOpenFiles": [
-    "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
     "posts/Thinking in Java/Ch6. Access Control/6.2 Java 訪問權限修飾詞解析及其應用.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.1 Java 組合與繼承語法詳解.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Java 繼承與 protected 關鍵字解析.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+    "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
     "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/inherit.png",
