@@ -3,6 +3,7 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "keywords": "multitext"
+    "keywords": "multitext",
+    "sidebar_position": "number"
   }
 }
