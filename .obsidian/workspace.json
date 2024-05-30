@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+                "file": "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+                "file": "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
+                "file": "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md"
+                "file": "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md"
               }
             }
           },
@@ -166,34 +166,34 @@
   },
   "active": "e0daddd0e8a63714",
   "lastOpenFiles": [
+    "posts/Thinking in Java/Ch2. Everything is an Object/2.2 Class.md",
+    "posts/Thinking in Java/Ch2. Everything is an Object/2.3 First Java Program.md",
+    "posts/Thinking in Java/Ch3. Operators/3.1 Fundamentals.md",
+    "posts/Thinking in Java/Ch3. Operators/3.2 Arithmetic and Relations.md",
+    "posts/Thinking in Java/Ch3. Operators/3.3 Logical, Bitwise, and Shift.md",
+    "posts/Thinking in Java/Ch3. Operators/3.4 Logical Specialized Uses and Conversions.md",
+    "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
+    "posts/Thinking in Java/Ch4. Controlling Execution/4.2 Advanced Control Structures.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.1 Constructing Objects.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.3 Finalization and garbage collection.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.4 Class Member Initialization.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.5 Array initialization.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.6 Variable Argument Lists.md",
+    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
     "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
     "posts/Thinking in Java/Ch6. Access Control/6.2 Java 訪問權限修飾詞解析及其應用.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.1 Java 組合與繼承語法詳解.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Java 繼承與 protected 關鍵字解析.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
-    "posts/Thinking in Java/Ch4. Controlling Execution/4.1 Flow Control.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/inherit.png",
     "posts/Thinking in Java/Ch7. Reusing Classes/assets/inherit.png",
     "posts/Thinking in Java/Ch7. Reusing Classes/assets",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.6 Variable Argument Lists.md",
     "posts/Thinking in Java/Ch7. Reusing Classes",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.1 Constructing Objects.md",
     "posts/Thinking in Java/Ch6. Access Control",
     "posts/Networking/octet-stream.md",
     "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
     "posts/Networking",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.2 The This keyword.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.5 Array initialization.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.4 Class Member Initialization.md",
-    "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.3 Finalization and garbage collection.md",
-    "posts/Thinking in Java/Ch2. Everything is an Object/2.3 First Java Program.md",
-    "posts/Thinking in Java/Ch2. Everything is an Object/2.2 Class.md",
-    "posts/Thinking in Java/Ch3. Operators/3.4 Logical Specialized Uses and Conversions.md",
-    "posts/Thinking in Java/Ch3. Operators/3.3 Logical, Bitwise, and Shift.md",
-    "posts/Thinking in Java/Ch3. Operators/3.2 Arithmetic and Relations.md",
-    "posts/Thinking in Java/Ch3. Operators/3.1 Fundamentals.md",
-    "posts/Thinking in Java/Ch4. Controlling Execution/4.2 Advanced Control Structures.md",
     "posts/Thinking in Java/Ch4. Controlling Execution",
     "posts/Thinking in Java/Ch3. Operators",
     "posts/Thinking in Java/Ch2. Everything is an Object",
