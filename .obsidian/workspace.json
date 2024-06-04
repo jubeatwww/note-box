@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/238. Product of Array Except Self.md",
+                "file": "leetcode/347. Top K Frequent Elements.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/238. Product of Array Except Self.md",
+                "file": "leetcode/347. Top K Frequent Elements.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/238. Product of Array Except Self.md",
+                "file": "leetcode/347. Top K Frequent Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/238. Product of Array Except Self.md"
+                "file": "leetcode/347. Top K Frequent Elements.md"
               }
             }
           },
@@ -166,8 +166,10 @@
   },
   "active": "09ce433634821015",
   "lastOpenFiles": [
-    "leetcode/347. Top K Frequent Elements.md",
     "leetcode/238. Product of Array Except Self.md",
+    "posts/Thinking in Java/Ch7. Reusing Classes/7.1 Java 組合與繼承語法詳解.md",
+    "leetcode/143. Reorder List.md",
+    "leetcode/347. Top K Frequent Elements.md",
     "leetcode/287. Find the Duplicate Number.md",
     "posts/Thinking in Java/Ch2. Everything is an Object/2.1 Basics.md",
     "posts/Thinking in Java/Ch2. Everything is an Object/2.2 Class.md",
@@ -187,7 +189,6 @@
     "posts/Thinking in Java/Ch5. Initialization & Cleanup/5.7 Enumerated types.md",
     "posts/Thinking in Java/Ch6. Access Control/6.1 Java 訪問權限修飾詞及 package 用法.md",
     "posts/Thinking in Java/Ch6. Access Control/6.2 Java 訪問權限修飾詞解析及其應用.md",
-    "posts/Thinking in Java/Ch7. Reusing Classes/7.1 Java 組合與繼承語法詳解.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.2 Java 繼承與 protected 關鍵字解析.md",
     "posts/Thinking in Java/Ch7. Reusing Classes/7.3 Java final 關鍵字詳解及應用.md",
     "Linux kernel/你所不知道的C語言/函式呼叫/assets/inherit.png",
@@ -200,7 +201,6 @@
     "posts/Thinking in Java/Ch4. Controlling Execution",
     "posts/Thinking in Java/Ch3. Operators",
     "posts/Thinking in Java/Ch2. Everything is an Object",
-    "leetcode/98. Validate Binary Search Tree.md",
     "posts/Thinking in Java/Ch5. Initialization & Cleanup",
     "posts/Thinking in Java",
     "blogs/authors.yml",
