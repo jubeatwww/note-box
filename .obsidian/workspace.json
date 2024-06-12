@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "leetcode/525. Contiguous Array.md",
+                "file": "leetcode/1291. Sequential Digits.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/525. Contiguous Array.md",
+                "file": "leetcode/1291. Sequential Digits.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/525. Contiguous Array.md",
+                "file": "leetcode/1291. Sequential Digits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/525. Contiguous Array.md"
+                "file": "leetcode/1291. Sequential Digits.md"
               }
             }
           },
@@ -179,8 +179,8 @@
   },
   "active": "989baec60251a277",
   "lastOpenFiles": [
-    "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
     "leetcode/525. Contiguous Array.md",
+    "leetcode/1249. Minimum Remove to Make Valid Parentheses.md",
     "leetcode/2971. Find Polygon With the Largest Perimeter.md",
     "leetcode/347. Top K Frequent Elements.md",
     "leetcode/451. Sort Characters By Frequency.md",
